@@ -1,0 +1,254 @@
+{
+    "results": [
+        {
+            "test_fqn": "ping601",
+            "status": "pass",
+            "test": {
+                "command": "ping01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "ping01 1 TINFO: Running: ping01.sh -6\nping01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nping01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nping01 1 TINFO: add local addr 10.0.0.2/24\nping01 1 TINFO: add local addr fd00:1:1:1::2/64\nping01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nping01 1 TINFO: add remote addr 10.0.0.1/24\nping01 1 TINFO: add remote addr fd00:1:1:1::1/64\nping01 1 TINFO: Network config (local -- remote):\nping01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nping01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nping01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nping01 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\nping01 1 TINFO: timeout per run is 0h 55m 0s\nping01 1 TINFO: ping6 with 8 16 32 64 128 256 512 1024 2048 4064 ICMP packets\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 8 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 16 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 32 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 64 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 128 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 256 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 512 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 1024 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 2048 fd00:1:1:1::1 >/dev/null passed as expected\nping01 1 TPASS: ping6 -i 0.2 -c 3 -s 4064 fd00:1:1:1::1 >/dev/null passed as expected\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 4.953033924102783,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "ping602",
+            "status": "pass",
+            "test": {
+                "command": "ping02.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "ping02 1 TINFO: Running: ping02.sh -6\nping02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nping02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nping02 1 TINFO: add local addr 10.0.0.2/24\nping02 1 TINFO: add local addr fd00:1:1:1::2/64\nping02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nping02 1 TINFO: add remote addr 10.0.0.1/24\nping02 1 TINFO: add remote addr fd00:1:1:1::1/64\nping02 1 TINFO: Network config (local -- remote):\nping02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nping02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nping02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nping02 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\nping02 1 TINFO: timeout per run is 0h 55m 0s\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 8 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 16 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 32 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 64 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 128 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 256 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 512 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 1024 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 2048 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\nping02 1 TPASS: ping6 -I ltp_ns_veth2 -c 3 -s 4064 -f -p 000102030405060708090a0b0c0d0e0f fd00:1:1:1::1 >/dev/null passed as expected\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.737663745880127,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "sendfile601",
+            "status": "pass",
+            "test": {
+                "command": "sendfile01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "sendfile01 1 TINFO: Running: sendfile01.sh -6\nsendfile01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nsendfile01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nsendfile01 1 TINFO: add local addr 10.0.0.2/24\nsendfile01 1 TINFO: add local addr fd00:1:1:1::2/64\nsendfile01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nsendfile01 1 TINFO: add remote addr 10.0.0.1/24\nsendfile01 1 TINFO: add remote addr fd00:1:1:1::1/64\nsendfile01 1 TINFO: Network config (local -- remote):\nsendfile01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nsendfile01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nsendfile01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nsendfile01 1 TINFO: Using /tmp/LTP_sendfile01.BR1MAIpAHv as tmpdir (tmpfs filesystem)\nsendfile01 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\nsendfile01 1 TINFO: timeout per run is 0h 55m 0s\nsendfile01 1 TINFO: copy files from server to client using the sendfile() on IPv6\nsendfile01 1 TINFO: wait for the server to start\nsendfile01 1 TINFO: test IP: fd00:1:1:1::1, port: 52265, file: ascii.jmb\nsendfile01 1 TPASS: diff /opt/ltp/testcases/bin/datafiles/ascii.jmb ascii.jmb passed as expected\nsendfile01 1 TINFO: test IP: fd00:1:1:1::1, port: 52265, file: ascii.lg\nsendfile01 1 TPASS: diff /opt/ltp/testcases/bin/datafiles/ascii.lg ascii.lg passed as expected\nsendfile01 1 TINFO: test IP: fd00:1:1:1::1, port: 52265, file: ascii.med\nsendfile01 1 TPASS: diff /opt/ltp/testcases/bin/datafiles/ascii.med ascii.med passed as expected\nsendfile01 1 TINFO: test IP: fd00:1:1:1::1, port: 52265, file: ascii.sm\nsendfile01 1 TPASS: diff /opt/ltp/testcases/bin/datafiles/ascii.sm ascii.sm passed as expected\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.0136096477508545,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "tcpdump601",
+            "status": "conf",
+            "test": {
+                "command": "tcpdump01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "tcpdump01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\ntcpdump01 1 TINFO: add local addr 10.0.0.2/24\ntcpdump01 1 TINFO: add local addr fd00:1:1:1::2/64\ntcpdump01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\ntcpdump01 1 TINFO: add remote addr 10.0.0.1/24\ntcpdump01 1 TINFO: add remote addr fd00:1:1:1::1/64\ntcpdump01 1 TINFO: Network config (local -- remote):\ntcpdump01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\ntcpdump01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\ntcpdump01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\ntcpdump01 1 TCONF: 'tcpdump' not found\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5132207870483398,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "tracepath601",
+            "status": "conf",
+            "test": {
+                "command": "tracepath01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "tracepath01 1 TINFO: Running: tracepath01.sh -6\ntracepath01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\ntracepath01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\ntracepath01 1 TINFO: add local addr 10.0.0.2/24\ntracepath01 1 TINFO: add local addr fd00:1:1:1::2/64\ntracepath01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\ntracepath01 1 TINFO: add remote addr 10.0.0.1/24\ntracepath01 1 TINFO: add remote addr fd00:1:1:1::1/64\ntracepath01 1 TINFO: Network config (local -- remote):\ntracepath01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\ntracepath01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\ntracepath01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\ntracepath01 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\ntracepath01 1 TINFO: timeout per run is 0h 55m 0s\ntracepath01 1 TCONF: 'tracepath' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5691850185394287,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "traceroute601",
+            "status": "conf",
+            "test": {
+                "command": "traceroute01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "traceroute01 1 TINFO: Running: traceroute01.sh -6\ntraceroute01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\ntraceroute01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\ntraceroute01 1 TINFO: add local addr 10.0.0.2/24\ntraceroute01 1 TINFO: add local addr fd00:1:1:1::2/64\ntraceroute01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\ntraceroute01 1 TINFO: add remote addr 10.0.0.1/24\ntraceroute01 1 TINFO: add remote addr fd00:1:1:1::1/64\ntraceroute01 1 TINFO: Network config (local -- remote):\ntraceroute01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\ntraceroute01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\ntraceroute01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\ntraceroute01 1 TCONF: 'traceroute' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5515463352203369,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "dhcpd6",
+            "status": "conf",
+            "test": {
+                "command": "dhcpd_tests.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "dhcpd_tests 1 TINFO: Running: dhcpd_tests.sh -6\ndhcpd_tests 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\ndhcpd_tests 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\ndhcpd_tests 1 TINFO: add local addr 10.0.0.2/24\ndhcpd_tests 1 TINFO: add local addr fd00:1:1:1::2/64\ndhcpd_tests 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\ndhcpd_tests 1 TINFO: add remote addr 10.0.0.1/24\ndhcpd_tests 1 TINFO: add remote addr fd00:1:1:1::1/64\ndhcpd_tests 1 TINFO: Network config (local -- remote):\ndhcpd_tests 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\ndhcpd_tests 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\ndhcpd_tests 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\ndhcpd_tests 1 TCONF: 'dhcpd' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5677919387817383,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "dnsmasq6",
+            "status": "brok",
+            "test": {
+                "command": "dnsmasq_tests.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "dnsmasq_tests 1 TINFO: Running: dnsmasq_tests.sh -6\ndnsmasq_tests 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\ndnsmasq_tests 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\ndnsmasq_tests 1 TINFO: add local addr 10.0.0.2/24\ndnsmasq_tests 1 TINFO: add local addr fd00:1:1:1::2/64\ndnsmasq_tests 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\ndnsmasq_tests 1 TINFO: add remote addr 10.0.0.1/24\ndnsmasq_tests 1 TINFO: add remote addr fd00:1:1:1::1/64\ndnsmasq_tests 1 TINFO: Network config (local -- remote):\ndnsmasq_tests 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\ndnsmasq_tests 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\ndnsmasq_tests 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\ndnsmasq_tests 1 TINFO: Using /tmp/LTP_dnsmasq_tests.ivsVfD5UDh as tmpdir (tmpfs filesystem)\ndnsmasq_tests 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\ndnsmasq_tests 1 TINFO: timeout per run is 0h 55m 0s\ndnsmasq_tests 1 TINFO: create veth interfaces\ndnsmasq_tests 1 TINFO: add fd00:1:1:2::12/64 to ltp_veth0\ndnsmasq_tests 1 TINFO: testing DHCP server dnsmasq: Dnsmasq version 2.90  Copyright (c) 2000-2024 Simon Kelley\nCompile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth cryptohash DNSSEC loop-detect inotify dumpfile\ndnsmasq_tests 1 TINFO: using DHCP client: isc-dhclient-4.4.3-P1\ndnsmasq_tests 1 TINFO: starting DHCPv6 server on ltp_veth0\ndnsmasq_tests 1 TINFO: starting dhclient -6 ltp_veth1\ndnsmasq_tests 1 TBROK: dhclient failed\ndnsmasq_tests 1 TINFO: stopping dnsmasq\ndnsmasq_tests 1 TINFO: AppArmor enabled, this may affect test results\ndnsmasq_tests 1 TINFO: it can be disabled with TST_DISABLE_APPARMOR=1 (requires super/root)\ndnsmasq_tests 1 TINFO: loaded AppArmor profiles: none\n\nSummary:\npassed   0\nfailed   0\nbroken   1\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "2"
+                ],
+                "duration": 2.4196207523345947,
+                "failed": 0,
+                "passed": 0,
+                "broken": 1,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "brok"
+            }
+        },
+        {
+            "test_fqn": "ipneigh6_ip",
+            "status": "pass",
+            "test": {
+                "command": "ipneigh01.sh",
+                "arguments": [
+                    "-6",
+                    "-c",
+                    "ip"
+                ],
+                "log": "ipneigh01 1 TINFO: Running: ipneigh01.sh -6 -c ip\nipneigh01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nipneigh01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nipneigh01 1 TINFO: add local addr 10.0.0.2/24\nipneigh01 1 TINFO: add local addr fd00:1:1:1::2/64\nipneigh01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nipneigh01 1 TINFO: add remote addr 10.0.0.1/24\nipneigh01 1 TINFO: add remote addr fd00:1:1:1::1/64\nipneigh01 1 TINFO: Network config (local -- remote):\nipneigh01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nipneigh01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nipneigh01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nipneigh01 1 TINFO: ceiling LTP_TIMEOUT_MUL to 11\nipneigh01 1 TINFO: timeout per run is 0h 55m 0s\nipneigh01 1 TINFO: stress auto-creation NDISC cache entry deleted with 'ip' 50 times\nipneigh01 1 TPASS: verified adding/removing NDISC cache entry\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 2.649242639541626,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "ip6tables",
+            "status": "conf",
+            "test": {
+                "command": "iptables01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "iptables01 1 TINFO: Running: iptables01.sh -6\niptables01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\niptables01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\niptables01 1 TINFO: add local addr 10.0.0.2/24\niptables01 1 TINFO: add local addr fd00:1:1:1::2/64\niptables01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\niptables01 1 TINFO: add remote addr 10.0.0.1/24\niptables01 1 TINFO: add remote addr fd00:1:1:1::1/64\niptables01 1 TINFO: Network config (local -- remote):\niptables01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\niptables01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\niptables01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\niptables01 1 TCONF: 'telnet' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5609891414642334,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nft6",
+            "status": "conf",
+            "test": {
+                "command": "nft01.sh",
+                "arguments": [
+                    "-6"
+                ],
+                "log": "nft01 1 TINFO: Running: nft01.sh -6\nnft01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnft01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnft01 1 TINFO: add local addr 10.0.0.2/24\nnft01 1 TINFO: add local addr fd00:1:1:1::2/64\nnft01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnft01 1 TINFO: add remote addr 10.0.0.1/24\nnft01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnft01 1 TINFO: Network config (local -- remote):\nnft01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnft01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnft01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnft01 1 TCONF: 'telnet' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.56302809715271,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 15.098932027816772,
+        "passed": 25,
+        "failed": 0,
+        "broken": 1,
+        "skipped": 6,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

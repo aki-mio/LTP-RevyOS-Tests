@@ -1,0 +1,1104 @@
+{
+    "results": [
+        {
+            "test_fqn": "msgctl01",
+            "status": "pass",
+            "test": {
+                "command": "msgctl01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msguacGHH as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl01.c:37: TPASS: msgctl(IPC_STAT)\nmsgctl01.c:40: TPASS: msg_stime = 0\nmsgctl01.c:45: TPASS: msg_rtime = 0\nmsgctl01.c:50: TPASS: msg_ctime = 1754292868, expected 1754292868\nmsgctl01.c:58: TPASS: msg_qnum = 0\nmsgctl01.c:63: TPASS: msg_qbytes = 16384\nmsgctl01.c:68: TPASS: msg_lspid = 0\nmsgctl01.c:73: TPASS: msg_lrpid = 0\nmsgctl01.c:78: TPASS: msg_perm.__key == 1630208172\nmsgctl01.c:85: TPASS: msg_perm.uid = 0\nmsgctl01.c:92: TPASS: msg_perm.gid = 0\nmsgctl01.c:99: TPASS: msg_perm.cuid = 0\nmsgctl01.c:106: TPASS: msg_perm.cgid = 0\nmsgctl01.c:113: TPASS: msg_perm.mode = 0660\n\nSummary:\npassed   14\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03300023078918457,
+                "failed": 0,
+                "passed": 14,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgctl02",
+            "status": "pass",
+            "test": {
+                "command": "msgctl02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msg37qmhd as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl02.c:34: TPASS: msgctl(IPC_SET) msg_qbytes - 1\nmsgctl02.c:40: TPASS: msg_qbytes = 16383\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02813267707824707,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgctl03",
+            "status": "pass",
+            "test": {
+                "command": "msgctl03",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgVHQgIM as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl03.c:30: TPASS: msgctl(IPC_RMID)\nmsgctl03.c:34: TPASS: msgctl(IPC_STAT): EINVAL (22)\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.028717994689941406,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgctl04",
+            "status": "pass",
+            "test": {
+                "command": "msgctl04",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgmTucF1 as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl04.c:103: TINFO: Testing variant: libc msgctl()\nmsgctl04.c:79: TPASS: msgctl(4, 2, 0x2aaeb4a1d0) : EACCES (13)\nmsgctl04.c:75: TCONF: EFAULT is skipped for libc variant\nmsgctl04.c:75: TCONF: EFAULT is skipped for libc variant\nmsgctl04.c:79: TPASS: msgctl(5, -1, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(-1, 2, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(-1, 1, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(3, 0, (nil)) : EPERM (1)\nmsgctl04.c:103: TINFO: Testing variant: __NR_msgctl syscall\nmsgctl04.c:79: TPASS: msgctl(7, 2, 0x2aaeb4a1d0) : EACCES (13)\nmsgctl04.c:79: TPASS: msgctl(8, 2, 0xffffffffffffffff) : EFAULT (14)\nmsgctl04.c:79: TPASS: msgctl(8, 1, 0xffffffffffffffff) : EFAULT (14)\nmsgctl04.c:79: TPASS: msgctl(8, -1, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(-1, 2, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(-1, 1, 0x2aaeb4a1d0) : EINVAL (22)\nmsgctl04.c:79: TPASS: msgctl(6, 0, (nil)) : EPERM (1)\n\nSummary:\npassed   12\nfailed   0\nbroken   0\nskipped  2\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.20449495315551758,
+                "failed": 0,
+                "passed": 12,
+                "broken": 0,
+                "skipped": 2,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgctl05",
+            "status": "conf",
+            "test": {
+                "command": "msgctl05",
+                "arguments": [],
+                "log": "tst_test.c:1322: TCONF: test requires struct msqid64_ds to have the time_high fields\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.015984296798706055,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "msgctl06",
+            "status": "pass",
+            "test": {
+                "command": "msgctl06",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl06.c:102: TINFO: Test MSG_STAT_ANY with nobody user\nmsgctl06.c:118: TPASS: MSG_INFO returned valid index 9 to msgid 9\nmsgctl06.c:128: TPASS: Counted used = 1\nmsgctl06.c:75: TPASS: queue_cnt = 1\nmsgctl06.c:82: TPASS: msg_cnt = 1\nmsgctl06.c:89: TPASS: msg_bytes = 5\nmsgctl06.c:102: TINFO: Test MSG_STAT_ANY with root user\nmsgctl06.c:118: TPASS: MSG_INFO returned valid index 9 to msgid 9\nmsgctl06.c:128: TPASS: Counted used = 1\nmsgctl06.c:75: TPASS: queue_cnt = 1\nmsgctl06.c:82: TPASS: msg_cnt = 1\nmsgctl06.c:89: TPASS: msg_bytes = 5\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02773118019104004,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgctl12",
+            "status": "pass",
+            "test": {
+                "command": "msgctl12",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgctl12.c:44: TPASS: msgctl() test IPC_INFO succeeded\nmsgctl12.c:44: TPASS: msgctl() test MSG_INFO succeeded\nmsgctl12.c:44: TPASS: msgctl() test MSG_STAT succeeded\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.025502681732177734,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgstress01",
+            "status": "pass",
+            "test": {
+                "command": "msgstress01",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 08m 24s\ntst_pid.c:84: TINFO: Cannot read session user limits from '/sys/fs/cgroup/user.slice/user-0.slice/pids.max'\ntst_pid.c:84: TINFO: Cannot read session user limits from '/sys/fs/cgroup/pids/user.slice/user-0.slice/pids.max'\nmsgstress01.c:269: TINFO: Available messages slots: 32000\nmsgstress01.c:222: TINFO: All processes running\nmsgstress01.c:244: TPASS: Some messages received\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 152.5556240081787,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgget01",
+            "status": "pass",
+            "test": {
+                "command": "msgget01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgmy9K5l as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgget01.c:44: TPASS: message received = message sent\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.037442684173583984,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgget02",
+            "status": "pass",
+            "test": {
+                "command": "msgget02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgawsrvH as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgget02.c:50: TPASS: msgget(1630208178, 1536) : EEXIST (17)\nmsgget02.c:50: TPASS: msgget(1646985394, 0) : ENOENT (2)\nmsgget02.c:50: TPASS: msgget(1646985394, 1024) : ENOENT (2)\nmsgget02.c:50: TPASS: msgget(1630208178, 256) : EACCES (13)\nmsgget02.c:50: TPASS: msgget(1630208178, 128) : EACCES (13)\nmsgget02.c:50: TPASS: msgget(1630208178, 384) : EACCES (13)\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.17232203483581543,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgget03",
+            "status": "pass",
+            "test": {
+                "command": "msgget03",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgStHAkk as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgget03.c:39: TINFO: Current environment 0 message queues are already in use\nmsgget03.c:54: TINFO: The maximum number of message queues (32) reached\nmsgget03.c:28: TPASS: msgget(1630208211, 1536) : ENOSPC (28)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.0330660343170166,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgget04",
+            "status": "pass",
+            "test": {
+                "command": "msgget04",
+                "arguments": [],
+                "log": "tst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgget04.c:35: TPASS: msg_next_id succeeded, queue id 9953\nmsgget04.c:39: TPASS: /proc/sys/kernel/msg_next_id = -1\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.035516977310180664,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgget05",
+            "status": "pass",
+            "test": {
+                "command": "msgget05",
+                "arguments": [],
+                "log": "tst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgget05.c:37: TPASS: msg id 9972 has existed, msgget() returns the new msgid 9973\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03424358367919922,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv01",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgOI1Enr as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv01.c:38: TPASS: message received(hello) = message sent(hello)\nmsgrcv01.c:46: TPASS: queue bytes and number of queues matched\nmsgrcv01.c:50: TPASS: PID of last msgrcv(2) matched\nmsgrcv01.c:55: TPASS: msg_rtime = 1754293022 in [1754293022, 1754293022]\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02974390983581543,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv02",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgeijbtS as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv02.c:66: TPASS: msgrcv(32803, 0x2aabc8c688, 1023, 2, 0) : E2BIG (7)\nmsgrcv02.c:66: TPASS: msgrcv(32804, 0x2aabc8c688, 1024, 2, 0) : EACCES (13)\nmsgrcv02.c:66: TPASS: msgrcv(32805, (nil), 1024, 2, 0) : EFAULT (14)\nmsgrcv02.c:66: TPASS: msgrcv(-1, 0x2aabc8c688, 1024, 2, 0) : EINVAL (22)\nmsgrcv02.c:66: TPASS: msgrcv(32807, 0x2aabc8c688, -1, 2, 0) : EINVAL (22)\nmsgrcv02.c:66: TPASS: msgrcv(32808, 0x2aabc8c688, 1024, 3, 2048) : ENOMSG (42)\nmsgrcv02.c:66: TPASS: msgrcv(32809, 0x2aabc8c688, 1024, -1, 2048) : ENOMSG (42)\nmsgrcv02.c:66: TPASS: msgrcv(32810, 0x2aabc8c688, 1024, -1, 10240) : ENOMSG (42)\n\nSummary:\npassed   8\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.04523515701293945,
+                "failed": 0,
+                "passed": 8,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv03",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv03",
+                "arguments": [],
+                "log": "tst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgaBmJJy as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv03.c:60: TINFO: EINVAL for MSG_COPY without IPC_NOWAIT\nmsgrcv03.c:62: TPASS: msgrcv(32811, 0x2aac565500, 1024, 1, 16384) : EINVAL (22)\nmsgrcv03.c:60: TINFO: EINVAL for MSG_COPY with MSG_EXCEPT\nmsgrcv03.c:62: TPASS: msgrcv(32811, 0x2aac565500, 1024, 1, 24576) : EINVAL (22)\nmsgrcv03.c:60: TINFO: ENOMSG with IPC_NOWAIT and MSG_COPY but with less than msgtyp messages\nmsgrcv03.c:62: TPASS: msgrcv(32811, 0x2aac565500, 1024, 2, 18432) : ENOMSG (42)\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.049448490142822266,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv05",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv05",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgUJz5ae as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv05.c:33: TPASS: msgrcv(32812, 0x2ab956f0e8, 1024, 1, 0) : EINTR (4)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.029436111450195312,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv06",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv06",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msg9Sh6pA as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv06.c:27: TPASS: msgrcv(32813, 0x2ae0dfc760, 1024, 1, 0) : EIDRM (43)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.030298948287963867,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv07",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv07",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgbIPxZx as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv07.c:68: TPASS: msgrcv(MSG_EXCEPT) succeeded\nmsgrcv07.c:71: TPASS: MSG_EXCEPT excepted MSGTYPE2 and got MSGTYPE1\nmsgrcv07.c:95: TPASS: msgrcv(MSG_NOERROR) succeeded\nmsgrcv07.c:98: TPASS: MSG_NOERROR truncated message correctly\nmsgrcv07.c:134: TPASS: msgrcv(0, MSG_COPY) succeeded\nmsgrcv07.c:137: TPASS: MSG_COPY got MSGTYPE1 data correctly\nmsgrcv07.c:148: TPASS: msgrcv(1, MSG_COPY) succeeded\nmsgrcv07.c:151: TPASS: MSG_COPY got MSGTYPE2 data correctly\nmsgrcv07.c:157: TPASS: Two messages still in queue\nmsgrcv07.c:178: TPASS: msgrcv(zero_msgtyp) succeeded\nmsgrcv07.c:181: TPASS: zero_msgtyp got the first message\nmsgrcv07.c:200: TPASS: msgrcv(positive_msgtyp) succeeded\nmsgrcv07.c:203: TPASS: msgtyp got the first message in the queue of type msgtyp\nmsgrcv07.c:225: TPASS: msgrcv(negative_msgtyp) succeeded\nmsgrcv07.c:228: TPASS: -msgtyp got the first message in the queue with the lowest type\n\nSummary:\npassed   15\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.029361486434936523,
+                "failed": 0,
+                "passed": 15,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgrcv08",
+            "status": "pass",
+            "test": {
+                "command": "msgrcv08",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgdcEupf as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgrcv08.c:60: TPASS: No regression found.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02773880958557129,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgsnd01",
+            "status": "pass",
+            "test": {
+                "command": "msgsnd01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgRDDfoK as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgsnd01.c:44: TPASS: queue bytes and number of queues matched\nmsgsnd01.c:49: TPASS: PID of last msgsnd(2) matched\nmsgsnd01.c:54: TPASS: msg_stime = 1754293023 in [1754293023, 1754293023]\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02735114097595215,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgsnd02",
+            "status": "pass",
+            "test": {
+                "command": "msgsnd02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgjEveLc as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgsnd02.c:64: TPASS: msgsnd(32822, 0x2ad6c0a760, 1024, 0) : EACCES (13)\nmsgsnd02.c:64: TPASS: msgsnd(32822, (nil), 1024, 0) : EFAULT (14)\nmsgsnd02.c:64: TPASS: msgsnd(-1, 0x2ad6c0a760, 1024, 0) : EINVAL (22)\nmsgsnd02.c:64: TPASS: msgsnd(32822, 0x2ad6c0ab68, 1024, 0) : EINVAL (22)\nmsgsnd02.c:64: TPASS: msgsnd(32822, 0x2ad6c0af70, 1024, 0) : EINVAL (22)\nmsgsnd02.c:64: TPASS: msgsnd(32822, 0x2ad6c0a760, -1, 0) : EINVAL (22)\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.028097152709960938,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgsnd05",
+            "status": "pass",
+            "test": {
+                "command": "msgsnd05",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msgGczKQ4 as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgsnd05.c:45: TPASS: msgsnd(32823, 0x2ab185e758, 1024, 2048) : EAGAIN/EWOULDBLOCK (11)\nmsgsnd05.c:45: TPASS: msgsnd(32823, 0x2ab185e758, 1024, 0) : EINTR (4)\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.0287020206451416,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "msgsnd06",
+            "status": "pass",
+            "test": {
+                "command": "msgsnd06",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_msg8XEJSh as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nmsgsnd06.c:31: TPASS: msgsnd(32824, 0x2aafb4f760, 1024, 0) : EIDRM (43)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.036653995513916016,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl01",
+            "status": "pass",
+            "test": {
+                "command": "semctl01",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl01.c:43: TPASS: buf.sem_nsems and buf.sem_perm.mode are correct\nsemctl01.c:58: TPASS: buf.sem_perm.mode is correct\nsemctl01.c:73: TPASS: semaphores have expected values\nsemctl01.c:120: TPASS: number of sleeping processes is correct\nsemctl01.c:153: TPASS: last pid value is correct\nsemctl01.c:165: TPASS: semaphore value is correct\nsemctl01.c:120: TPASS: number of sleeping processes is correct\nsemctl01.c:192: TPASS: semaphore values are correct\nsemctl01.c:202: TPASS: semaphore value is correct\nsemctl01.c:215: TPASS: the highest index is correct\nsemctl01.c:227: TPASS: number of semaphore sets is correct\nsemctl01.c:233: TPASS: id of the semaphore set is correct\nsemctl01.c:207: TPASS: semaphore appears to be removed : EINVAL (22)\n\nSummary:\npassed   13\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.04768037796020508,
+                "failed": 0,
+                "passed": 13,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl02",
+            "status": "pass",
+            "test": {
+                "command": "semctl02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl02.c:26: TPASS: semctl(IPC_STAT) with nobody user : EACCES (13)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02639317512512207,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl03",
+            "status": "pass",
+            "test": {
+                "command": "semctl03",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl03.c:90: TINFO: Testing variant: libc semctl()\nsemctl03.c:81: TPASS: semctl() with invalid IPC command : EINVAL (22)\nsemctl03.c:81: TPASS: semctl() with invalid sem id : EINVAL (22)\nsemctl03.c:77: TCONF: EFAULT is skipped for libc variant\nsemctl03.c:77: TCONF: EFAULT is skipped for libc variant\nsemctl03.c:90: TINFO: Testing variant: __NR_semctl syscall\nsemctl03.c:81: TPASS: semctl() with invalid IPC command : EINVAL (22)\nsemctl03.c:81: TPASS: semctl() with invalid sem id : EINVAL (22)\nsemctl03.c:81: TPASS: semctl() with invalid union arg : EFAULT (14)\nsemctl03.c:81: TPASS: semctl() with invalid union arg : EFAULT (14)\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  2\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.030477285385131836,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 2,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl04",
+            "status": "pass",
+            "test": {
+                "command": "semctl04",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl04.c:42: TPASS: semctl() with nobody user in child : EPERM (1)\nsemctl04.c:42: TPASS: semctl() with nobody user in child : EPERM (1)\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.028548002243041992,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl05",
+            "status": "pass",
+            "test": {
+                "command": "semctl05",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl05.c:42: TPASS: semctl() with the value to set is less than zero : ERANGE (34)\nsemctl05.c:42: TPASS: semctl() with the value to set are too large : ERANGE (34)\nsemctl05.c:42: TPASS: semctl() with the value to set is too large : ERANGE (34)\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.026327133178710938,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl06",
+            "status": "pass",
+            "test": {
+                "command": "semctl06",
+                "arguments": [],
+                "log": "semctl06    0  TINFO  :  Using /tmp/LTP_semexfEb6 as tmpdir (tmpfs filesystem)\nsemctl06    1  TPASS  :  semctl06 ran successfully!\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.028226137161254883,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl07",
+            "status": "pass",
+            "test": {
+                "command": "semctl07",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl07.c:36: TPASS: semctl(semid, 0, IPC_STAT, arg) passed\nsemctl07.c:42: TPASS: sem_nsems = 1\nsemctl07.c:49: TPASS: sem_perm.uid = 0\nsemctl07.c:56: TPASS: sem_perm.gid = 0\nsemctl07.c:63: TPASS: sem_perm.cuid = 0\nsemctl07.c:70: TPASS: sem_perm.cgid = 0\nsemctl07.c:76: TPASS: semctl(GETVAL) succeeded\nsemctl07.c:83: TPASS: semctl(SETVAL) succeeded\nsemctl07.c:88: TPASS: semctl(GETVAL) succeeded\nsemctl07.c:94: TPASS: semctl(GETVAL) returned 1\nsemctl07.c:100: TPASS: semctl(GETPID) succeeded\nsemctl07.c:106: TPASS: semctl(GETPID) returned 10321\nsemctl07.c:112: TPASS: semctl(GETNCNT) succeeded\nsemctl07.c:118: TPASS: semctl(GETNCNT) returned 0\nsemctl07.c:123: TPASS: semctl(GETZCNT) succeeded\nsemctl07.c:128: TPASS: semctl(GETZCNT) succeeded 0\n\nSummary:\npassed   16\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.033721923828125,
+                "failed": 0,
+                "passed": 16,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semctl08",
+            "status": "conf",
+            "test": {
+                "command": "semctl08",
+                "arguments": [],
+                "log": "tst_test.c:1322: TCONF: test requires struct semid64_ds to have the time_high fields\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.00937795639038086,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "semctl09",
+            "status": "pass",
+            "test": {
+                "command": "semctl09",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemctl09.c:74: TINFO: Test SYS_semctl syscall\nsemctl09.c:139: TINFO: Test SEM_STAT_ANY with nobody user\nsemctl09.c:161: TPASS: SEM_INFO returned valid index 10 to semid 10\nsemctl09.c:171: TPASS: Counted used = 1\nsemctl09.c:119: TPASS: semset_cnt = 1\nsemctl09.c:126: TPASS: sen_cnt = 2\nsemctl09.c:139: TINFO: Test SEM_STAT_ANY with root user\nsemctl09.c:161: TPASS: SEM_INFO returned valid index 10 to semid 10\nsemctl09.c:171: TPASS: Counted used = 1\nsemctl09.c:119: TPASS: semset_cnt = 1\nsemctl09.c:126: TPASS: sen_cnt = 2\nsemctl09.c:77: TINFO: Test libc semctl()\nsemctl09.c:139: TINFO: Test SEM_STAT_ANY with nobody user\nsemctl09.c:161: TPASS: SEM_INFO returned valid index 11 to semid 11\nsemctl09.c:171: TPASS: Counted used = 1\nsemctl09.c:119: TPASS: semset_cnt = 1\nsemctl09.c:126: TPASS: sen_cnt = 2\nsemctl09.c:139: TINFO: Test SEM_STAT_ANY with root user\nsemctl09.c:161: TPASS: SEM_INFO returned valid index 11 to semid 11\nsemctl09.c:171: TPASS: Counted used = 1\nsemctl09.c:119: TPASS: semset_cnt = 1\nsemctl09.c:126: TPASS: sen_cnt = 2\n\nSummary:\npassed   16\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.15871262550354004,
+                "failed": 0,
+                "passed": 16,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semget01",
+            "status": "pass",
+            "test": {
+                "command": "semget01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_semjctPL0 as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemget01.c:27: TPASS: un_arg.buf->sem_nsems == PSEMS (10)\nsemget01.c:28: TPASS: un_arg.buf->sem_perm.cuid == geteuid() (0)\nsemget01.c:30: TPASS: basic semaphore values are okay\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03326153755187988,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semget02",
+            "status": "pass",
+            "test": {
+                "command": "semget02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_seml8AgpI as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemget02.c:53: TPASS: semget(1630208193, 10, 384) : EACCES (13)\nsemget02.c:53: TPASS: semget(1630208193, 10, 1536) : EEXIST (17)\nsemget02.c:53: TPASS: semget(1646985409, 10, 384) : ENOENT (2)\nsemget02.c:53: TPASS: semget(1646985409, -1, 1536) : EINVAL (22)\nsemget02.c:53: TPASS: semget(1646985409, 32001, 1536) : EINVAL (22)\nsemget02.c:53: TPASS: semget(1630208193, 11, 384) : EINVAL (22)\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02789926528930664,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semget05",
+            "status": "pass",
+            "test": {
+                "command": "semget05",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_sem5nG0Hz as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemget05.c:39: TINFO: Current environment 0 semaphore arrays are already in use\ntst_test.c:1795: TINFO: Updating runtime to 0h 02m 40s\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 08m 04s\nsemget05.c:54: TINFO: The maximum number of semaphore arrays (32000) has been reached\nsemget05.c:28: TPASS: semget(1630240194, 10, 1920) : ENOSPC (28)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.29016757011413574,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semop01",
+            "status": "pass",
+            "test": {
+                "command": "semop01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_sem8N8uyb as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemop01.c:71: TINFO: Testing variant: semop: syscall\nsemop01.c:58: TPASS: semaphore values are correct\nsemop01.c:58: TPASS: semaphore values are correct\nsemop01.c:71: TINFO: Testing variant: semtimedop: syscall with old kernel spec\nsemop01.c:58: TPASS: semaphore values are correct\nsemop01.c:58: TPASS: semaphore values are correct\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03577256202697754,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semop02",
+            "status": "pass",
+            "test": {
+                "command": "semop02",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_semEhs7RE as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemop02.c:78: TINFO: Testing variant: semop: syscall\nsemop02.c:148: TPASS: semop failed as expected: E2BIG (7)\nsemop02.c:148: TPASS: semop failed as expected: EACCES (13)\nsemop02.c:148: TPASS: semop failed as expected: EFAULT (14)\nsemop02.c:148: TPASS: semop failed as expected: EINVAL (22)\nsemop02.c:148: TPASS: semop failed as expected: EINVAL (22)\nsemop02.c:148: TPASS: semop failed as expected: ERANGE (34)\nsemop02.c:148: TPASS: semop failed as expected: EFBIG (27)\nsemop02.c:148: TPASS: semop failed as expected: EFBIG (27)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:123: TCONF: Test not supported for variant\nsemop02.c:123: TCONF: Test not supported for variant\nsemop02.c:123: TCONF: Test not supported for variant\nsemop02.c:78: TINFO: Testing variant: semtimedop: syscall with old kernel spec\nsemop02.c:148: TPASS: semop failed as expected: E2BIG (7)\nsemop02.c:148: TPASS: semop failed as expected: EACCES (13)\nsemop02.c:148: TPASS: semop failed as expected: EFAULT (14)\nsemop02.c:148: TPASS: semop failed as expected: EINVAL (22)\nsemop02.c:148: TPASS: semop failed as expected: EINVAL (22)\nsemop02.c:148: TPASS: semop failed as expected: ERANGE (34)\nsemop02.c:148: TPASS: semop failed as expected: EFBIG (27)\nsemop02.c:148: TPASS: semop failed as expected: EFBIG (27)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:148: TPASS: semop failed as expected: EAGAIN/EWOULDBLOCK (11)\nsemop02.c:148: TPASS: semop failed as expected: EFAULT (14)\n\nSummary:\npassed   23\nfailed   0\nbroken   0\nskipped  3\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03176307678222656,
+                "failed": 0,
+                "passed": 23,
+                "broken": 0,
+                "skipped": 3,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "semop03",
+            "status": "pass",
+            "test": {
+                "command": "semop03",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_semgYQy5X as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nsemop03.c:69: TINFO: Testing variant: semop: syscall\nsemop03.c:52: TPASS: expected failure: EIDRM (43)\nsemop03.c:52: TPASS: expected failure: EIDRM (43)\nsemop03.c:52: TPASS: expected failure: EINTR (4)\nsemop03.c:52: TPASS: expected failure: EINTR (4)\nsemop03.c:69: TINFO: Testing variant: semtimedop: syscall with old kernel spec\nsemop03.c:52: TPASS: expected failure: EIDRM (43)\nsemop03.c:52: TPASS: expected failure: EIDRM (43)\nsemop03.c:52: TPASS: expected failure: EINTR (4)\nsemop03.c:52: TPASS: expected failure: EINTR (4)\n\nSummary:\npassed   8\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.05610251426696777,
+                "failed": 0,
+                "passed": 8,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmat01",
+            "status": "pass",
+            "test": {
+                "command": "shmat01",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmat01.c:124: TPASS: shmat() succeeded to attach NULL address\nshmat01.c:124: TPASS: shmat() succeeded to attach aligned address\nshmat01.c:124: TPASS: shmat() succeeded to attach unaligned address with SHM_RND\ntst_coredump.c:30: TINFO: Avoid dumping corefile for process(pid=10489)\nshmat01.c:124: TPASS: shmat() succeeded to attach aligned address with SHM_READONLY, and got SIGSEGV on write\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.16274213790893555,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmat02",
+            "status": "pass",
+            "test": {
+                "command": "shmat02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmat02.c:47: TPASS: shmat(*tc->shmid, *tc->shmaddr, 0) : EINVAL (22)\nshmat02.c:47: TPASS: shmat(*tc->shmid, *tc->shmaddr, 0) : EINVAL (22)\nshmat02.c:47: TPASS: shmat(*tc->shmid, *tc->shmaddr, 0) : EACCES (13)\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03595566749572754,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmat04",
+            "status": "pass",
+            "test": {
+                "command": "shmat04",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmat04.c:74: TINFO: Key id: 1627674177\nshmat04.c:75: TINFO: Page size: 4096\nshmat04.c:43: TINFO: Attached at 0x3f857df000. key: 32780 - size: 12288\nshmat04.c:48: TINFO: Number of attaches: 1\nshmat04.c:55: TINFO: Number of attaches: 3\nshmat04.c:56: TINFO: Delete attached memory\nshmat04.c:61: TINFO: Number of attaches: 0\nshmat04.c:66: TPASS: shmid_ds.shm_nattch == 0 (0)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.024498701095581055,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl01",
+            "status": "pass",
+            "test": {
+                "command": "shmctl01",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl01.c:254: TINFO: shm_id=32781 maps to kernel index=13\nshmctl01.c:218: TINFO: Basic checks\nshmctl01.c:173: TPASS: IPC_STAT: shm_segsz=2048\nshmctl01.c:180: TPASS: IPC_STAT: shm_cpid=10541\nshmctl01.c:187: TPASS: IPC_STAT: shm_ctime=1754293025 in range <1754293025,1754293025>\nshmctl01.c:173: TPASS: SHM_STAT: shm_segsz=2048\nshmctl01.c:180: TPASS: SHM_STAT: shm_cpid=10541\nshmctl01.c:187: TPASS: SHM_STAT: shm_ctime=1754293025 in range <1754293025,1754293025>\nshmctl01.c:218: TINFO: Children attach SHM\nshmctl01.c:114: TPASS: before child shmat() shm_nattch=0\nshmctl01.c:114: TPASS: after child shmat() shm_nattch=20\nshmctl01.c:114: TPASS: after child shmdt() shm_nattch=0\nshmctl01.c:218: TINFO: Chidlren inherit SHM\nshmctl01.c:114: TPASS: inherited after fork() shm_nattch=21\nshmctl01.c:114: TPASS: after child shmdt() shm_nattch=1\nshmctl01.c:114: TPASS: after parent shmdt() shm_nattch=0\n\nSummary:\npassed   12\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.1832408905029297,
+                "failed": 0,
+                "passed": 12,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl02",
+            "status": "pass",
+            "test": {
+                "command": "shmctl02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl02.c:107: TINFO: Testing variant: libc shmctl()\nshmctl02.c:95: TPASS: shmctl(32784, 2, 0x2ae87480f8) : EACCES (13)\nshmctl02.c:91: TCONF: EFAULT is skipped for libc variant\nshmctl02.c:91: TCONF: EFAULT is skipped for libc variant\nshmctl02.c:95: TPASS: shmctl(32786, -1, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(-1, 2, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(32787, 2, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(32783, 2, 0x2ae87480f8) : EACCES (13)\nshmctl02.c:95: TPASS: shmctl(32783, 0, (nil)) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32783, 1, 0x2ae87480f8) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32783, 11, 0x2ae87480f8) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32783, 12, 0x2ae87480f8) : EPERM (1)\nshmctl02.c:107: TINFO: Testing variant: __NR_shmctl syscall\nshmctl02.c:95: TPASS: shmctl(32789, 2, 0x2ae87480f8) : EACCES (13)\nshmctl02.c:95: TPASS: shmctl(32790, 1, 0xffffffffffffffff) : EFAULT (14)\nshmctl02.c:95: TPASS: shmctl(32790, 2, 0xffffffffffffffff) : EFAULT (14)\nshmctl02.c:95: TPASS: shmctl(32790, -1, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(-1, 2, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(32791, 2, 0x2ae87480f8) : EINVAL (22)\nshmctl02.c:95: TPASS: shmctl(32788, 2, 0x2ae87480f8) : EACCES (13)\nshmctl02.c:95: TPASS: shmctl(32788, 0, (nil)) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32788, 1, 0x2ae87480f8) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32788, 11, 0x2ae87480f8) : EPERM (1)\nshmctl02.c:95: TPASS: shmctl(32788, 12, 0x2ae87480f8) : EPERM (1)\n\nSummary:\npassed   20\nfailed   0\nbroken   0\nskipped  2\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.036205291748046875,
+                "failed": 0,
+                "passed": 20,
+                "broken": 0,
+                "skipped": 2,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl03",
+            "status": "pass",
+            "test": {
+                "command": "shmctl03",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl03.c:31: TPASS: shmmin = 1\nshmctl03.c:33: TPASS: /proc/sys/kernel/shmmax = 18446744073692774399\nshmctl03.c:34: TPASS: /proc/sys/kernel/shmmni = 4096\nshmctl03.c:35: TPASS: /proc/sys/kernel/shmall = 18446744073692774399\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.024677753448486328,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl04",
+            "status": "pass",
+            "test": {
+                "command": "shmctl04",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl04.c:117: TINFO: Test SHM_STAT_ANY with nobody user\nshmctl04.c:133: TPASS: SHM_INFO returned valid index 39 maps to shmid 39\nshmctl04.c:144: TPASS: Counted used = 11\nshmctl04.c:83: TPASS: used_ids = 11\nshmctl04.c:90: TPASS: shm_rss = 4198\nshmctl04.c:97: TPASS: shm_swp = 0\nshmctl04.c:104: TPASS: shm_tot = 17537\nshmctl04.c:117: TINFO: Test SHM_STAT_ANY with root user\nshmctl04.c:133: TPASS: SHM_INFO returned valid index 39 maps to shmid 39\nshmctl04.c:144: TPASS: Counted used = 11\nshmctl04.c:83: TPASS: used_ids = 11\nshmctl04.c:90: TPASS: shm_rss = 4198\nshmctl04.c:97: TPASS: shm_swp = 0\nshmctl04.c:104: TPASS: shm_tot = 17537\n\nSummary:\npassed   12\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.029655933380126953,
+                "failed": 0,
+                "passed": 12,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl05",
+            "status": "pass",
+            "test": {
+                "command": "shmctl05",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 34s\n../../../../../include/tst_fuzzy_sync.h:484: TINFO: Minimum sampling period ended\n../../../../../include/tst_fuzzy_sync.h:307: TINFO: loop = 1024, delay_bias = 0\n../../../../../include/tst_fuzzy_sync.h:295: TINFO: start_a - start_b: { avg =    -0ns, avg_dev =     1ns, dev_ratio = 14.09 }\n../../../../../include/tst_fuzzy_sync.h:295: TINFO: end_a - start_a  : { avg = 34544ns, avg_dev =  4180ns, dev_ratio = 0.12 }\n../../../../../include/tst_fuzzy_sync.h:295: TINFO: end_b - start_b  : { avg = 16864ns, avg_dev =  3960ns, dev_ratio = 0.23 }\n../../../../../include/tst_fuzzy_sync.h:295: TINFO: end_a - end_b    : { avg = 17680ns, avg_dev =   550ns, dev_ratio = 0.03 }\n../../../../../include/tst_fuzzy_sync.h:295: TINFO: spins            : { avg =   187  , avg_dev =     6  , dev_ratio = 0.03 }\n../../../../../include/tst_fuzzy_sync.h:648: TINFO: Exceeded execution time, requesting exit\nshmctl05.c:87: TPASS: didn't crash\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 10.036379337310791,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl06",
+            "status": "conf",
+            "test": {
+                "command": "shmctl06",
+                "arguments": [],
+                "log": "tst_test.c:1322: TCONF: test requires struct shmid64_ds to have the time_high fields\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.00939035415649414,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "shmctl07",
+            "status": "pass",
+            "test": {
+                "command": "shmctl07",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl07.c:29: TPASS: shmctl(100925459, SHM_LOCK, NULL)\nshmctl07.c:35: TPASS: SMH_LOCKED bit is on in shm_perm.mode\nshmctl07.c:44: TPASS: shmctl(100925459, SHM_UNLOCK, NULL)\nshmctl07.c:51: TPASS: SHM_LOCKED bit is off in shm_perm.mode\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.02480340003967285,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmctl08",
+            "status": "pass",
+            "test": {
+                "command": "shmctl08",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmctl08.c:40: TPASS: shm_perm.mode=0666\nshmctl08.c:32: TPASS: shmctl(100925460, IPC_SET, {shm_perm.mode=0600})\nshmctl08.c:40: TPASS: shm_perm.mode=0600\nshmctl08.c:76: TPASS: shm_ctime updated correctly diff=1\nshmctl08.c:32: TPASS: shmctl(100925460, IPC_SET, {shm_perm.mode=0666})\nshmctl08.c:40: TPASS: shm_perm.mode=0666\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.0260155200958252,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmdt01",
+            "status": "pass",
+            "test": {
+                "command": "shmdt01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmPyOeem as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmdt01.c:34: TPASS: buf.shm_nattch == 0 (0)\nshmdt01.c:42: TPASS: shared memory detached correctly\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03382992744445801,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmdt02",
+            "status": "pass",
+            "test": {
+                "command": "shmdt02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmdt02.c:33: TPASS: shmdt(non_attched_addr) : EINVAL (22)\nshmdt02.c:33: TPASS: shmdt(unaligned_addr) : EINVAL (22)\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.026655197143554688,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmget02",
+            "status": "pass",
+            "test": {
+                "command": "shmget02",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 0 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmNfRZK0 as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\nshmget02.c:88: TPASS: shmget(1646985415, 2048, 1024) : ENOENT (2)\nshmget02.c:88: TPASS: shmget(1630208199, 2048, 1536) : EEXIST (17)\nshmget02.c:88: TPASS: shmget(1646985415, 0, 1536) : EINVAL (22)\nshmget02.c:88: TPASS: shmget(1646985415, 8193, 1536) : EINVAL (22)\nshmget02.c:88: TPASS: shmget(1630208199, 4096, 1024) : EINVAL (22)\nshmget02.c:100: TPASS: shmget(1630208199, 2048, 256) : EACCES (13)\nshmget02.c:100: TPASS: shmget(1646985415, 2048, 2560) : EPERM (1)\nshmget02.c:88: TPASS: shmget(1646985415, 2048, 2560) : ENOMEM (12)\n\nSummary:\npassed   8\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.04486370086669922,
+                "failed": 0,
+                "passed": 8,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmget03",
+            "status": "pass",
+            "test": {
+                "command": "shmget03",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmJhUTZD as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmget03.c:38: TINFO: Current environment 10 shared memory segments are already in use\nshmget03.c:50: TINFO: The maximum number of memory segments (4096) has been reached\nshmget03.c:28: TPASS: shmget(1630212296, 2048, 1920) : ENOSPC (28)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.1303882598876953,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmget04",
+            "status": "pass",
+            "test": {
+                "command": "shmget04",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmgTBuaX as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmget04.c:40: TINFO: Testing SHM_RD flag\nshmget04.c:41: TPASS: shmget(1630208201, 2048, 256) : EACCES (13)\nshmget04.c:40: TINFO: Testing SHM_WR flag\nshmget04.c:41: TPASS: shmget(1630208201, 2048, 128) : EACCES (13)\nshmget04.c:40: TINFO: Testing SHM_RW flag\nshmget04.c:41: TPASS: shmget(1630208201, 2048, 384) : EACCES (13)\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.034227848052978516,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmget05",
+            "status": "pass",
+            "test": {
+                "command": "shmget05",
+                "arguments": [],
+                "log": "tst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmMA45ty as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmget05.c:36: TPASS: shm_next_id succeeded, shm id 10813\nshmget05.c:40: TPASS: /proc/sys/kernel/shm_next_id = -1\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.0400087833404541,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "shmget06",
+            "status": "pass",
+            "test": {
+                "command": "shmget06",
+                "arguments": [],
+                "log": "tst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_shmeaQCfZ as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nshmget06.c:38: TPASS: shm id 10832 has existed, shmget() returns the new shm id 10833\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.03483724594116211,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 166.39665365219116,
+        "passed": 289,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 12,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

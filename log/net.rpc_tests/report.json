@@ -1,0 +1,1197 @@
+{
+    "results": [
+        {
+            "test_fqn": "rpc01",
+            "status": "conf",
+            "test": {
+                "command": "rpc01.sh",
+                "arguments": [],
+                "log": "rpc01 1 TINFO: Running: rpc01.sh \nrpc01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc01 1 TINFO: add local addr 10.0.0.2/24\nrpc01 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc01 1 TINFO: add remote addr 10.0.0.1/24\nrpc01 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc01 1 TINFO: Network config (local -- remote):\nrpc01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc01 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5577495098114014,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpcinfo",
+            "status": "conf",
+            "test": {
+                "command": "rpcinfo01.sh",
+                "arguments": [],
+                "log": "rpcinfo01 1 TINFO: Running: rpcinfo01.sh \nrpcinfo01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpcinfo01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpcinfo01 1 TINFO: add local addr 10.0.0.2/24\nrpcinfo01 1 TINFO: add local addr fd00:1:1:1::2/64\nrpcinfo01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpcinfo01 1 TINFO: add remote addr 10.0.0.1/24\nrpcinfo01 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpcinfo01 1 TINFO: Network config (local -- remote):\nrpcinfo01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpcinfo01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpcinfo01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpcinfo01 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5585768222808838,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_pmap_set",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_pmap_set"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_pmap_set\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5461931228637695,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_pmap_unset",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_pmap_unset"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_pmap_unset\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5469040870666504,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_pmap_getport",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_pmap_getport"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_pmap_getport\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5493717193603516,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_pmap_getmaps",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_pmap_getmaps"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_pmap_getmaps\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.548159122467041,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_pmap_rmtcall",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_pmap_rmtcall"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_pmap_rmtcall\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5423300266265869,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_get_myaddress",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_get_myaddress"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_get_myaddress\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5444087982177734,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_authnone_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_authnone_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_authnone_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5454175472259521,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_authunix_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_authunix_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_authunix_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5461106300354004,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_authunix_create_default",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_authunix_create_default"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_authunix_create_default\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5469319820404053,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_auth_destroy",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_auth_destroy"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_auth_destroy\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5481624603271484,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_broadcast",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_broadcast"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_broadcast\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5515961647033691,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_destroy",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svc_destroy"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svc_destroy\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5451719760894775,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcfd_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svcfd_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svcfd_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5413894653320312,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svctcp_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svctcp_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svctcp_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.549548864364624,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcudp_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svcudp_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svcudp_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5455634593963623,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcraw_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svcraw_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svcraw_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5512473583221436,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcudp_bufcreate",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svcudp_bufcreate"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svcudp_bufcreate\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5457720756530762,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_destroy",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_destroy"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_destroy\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5477101802825928,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5428190231323242,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clntraw_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clntraw_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clntraw_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5452253818511963,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnttcp_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnttcp_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnttcp_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5508840084075928,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clntudp_create",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clntudp_create"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clntudp_create\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5499682426452637,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clntudp_bufcreate",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clntudp_bufcreate"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clntudp_bufcreate\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5526316165924072,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_pcreateerror",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_pcreateerror"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_pcreateerror\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5514898300170898,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_perrno",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_perrno"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_perrno\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5508723258972168,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_perror",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_perror"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_perror\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5618510246276855,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_spcreateerror",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_spcreateerror"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_spcreateerror\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.550504207611084,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_sperrno",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_sperrno"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_sperrno\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5498125553131104,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_sperror",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_sperror"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_sperror\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6351974010467529,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_noproc",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svcerr_noproc"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svcerr_noproc\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5631635189056396,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_noprog",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svcerr_noprog"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svcerr_noprog\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5504450798034668,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_progvers",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svcerr_progvers"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svcerr_progvers\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5432426929473877,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_systemerr",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svcerr_systemerr"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svcerr_systemerr\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5399477481842041,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_auth",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svcerr_auth"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svcerr_auth\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5426688194274902,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svcerr_weakauth",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svcerr_weakauth"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svcerr_weakauth\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5603909492492676,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_xprt_register",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_xprt_register"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_xprt_register\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5458285808563232,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_xprt_unregister",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_xprt_unregister"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_xprt_unregister\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5439820289611816,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_register",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svc_register"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svc_register\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.542449951171875,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_unregister",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_svc_unregister"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_svc_unregister\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.551227331161499,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_registerrpc",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-c",
+                    "rpc_registerrpc"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -c rpc_registerrpc\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.545748233795166,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_call",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_call"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_call\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5469880104064941,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_callrpc",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_callrpc"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_callrpc\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5497589111328125,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_freeres",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_freeres"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_freeres\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5938348770141602,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_geterr",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_geterr"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_geterr\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.551661491394043,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_clnt_control",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_clnt_control"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_clnt_control\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5461628437042236,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_getcaller",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svc_getcaller"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svc_getcaller\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5472331047058105,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_freeargs",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_1",
+                    "-c",
+                    "rpc_svc_freeargs"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_1 -c rpc_svc_freeargs\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.547102689743042,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_getargs",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_getargs",
+                    "-c",
+                    "rpc_svc_getargs_client"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_getargs -c rpc_svc_getargs_client\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5473363399505615,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "rpc_svc_sendreply",
+            "status": "conf",
+            "test": {
+                "command": "rpc_test.sh",
+                "arguments": [
+                    "-s",
+                    "rpc_svc_sendreply",
+                    "-c",
+                    "rpc_svc_sendreply_client"
+                ],
+                "log": "rpc_test 1 TINFO: Running: rpc_test.sh -s rpc_svc_sendreply -c rpc_svc_sendreply_client\nrpc_test 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nrpc_test 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nrpc_test 1 TINFO: add local addr 10.0.0.2/24\nrpc_test 1 TINFO: add local addr fd00:1:1:1::2/64\nrpc_test 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nrpc_test 1 TINFO: add remote addr 10.0.0.1/24\nrpc_test 1 TINFO: add remote addr fd00:1:1:1::1/64\nrpc_test 1 TINFO: Network config (local -- remote):\nrpc_test 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nrpc_test 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nrpc_test 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nrpc_test 1 TCONF: 'rpcinfo' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5471317768096924,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 28.105875968933105,
+        "passed": 0,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 51,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

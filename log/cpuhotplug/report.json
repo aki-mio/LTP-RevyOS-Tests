@@ -1,0 +1,167 @@
+{
+    "results": [
+        {
+            "test_fqn": "cpuhotplug02",
+            "status": "pass",
+            "test": {
+                "command": "cpuhotplug02.sh",
+                "arguments": [
+                    "-c",
+                    "1",
+                    "-l",
+                    "1"
+                ],
+                "log": "Name:   cpuhotplug02\nDate:   Mon Aug  4 19:11:15 CST 2025\nDesc:   What happens to a process when its CPU is offlined?\n\nCPU is 1\ncpuhotplug02 1 TPASS: turned off CPU 1, process migrated to \tCPU   0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 7.220187425613403,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "cpuhotplug03",
+            "status": "pass",
+            "test": {
+                "command": "cpuhotplug03.sh",
+                "arguments": [
+                    "-c",
+                    "1",
+                    "-l",
+                    "1"
+                ],
+                "log": "Name:   cpuhotplug03\nDate:   Mon Aug  4 19:11:23 CST 2025\nDesc:   Do tasks get scheduled to a newly on-lined CPU?\n\nCPU is 1\nUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\nroot      428261 50.0  0.0   2084  1240 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428262 50.0  0.0   2084  1240 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428263 52.1  0.0   2084  1328 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428264 56.5  0.0   2084  1240 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428265 56.5  0.0   2084  1296 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428266 45.4  0.0   2084  1296 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428267 54.5  0.0   2084  1344 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428268 50.0  0.0   2084  1344 ?        R    19:11   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\nroot      428272  0.0  0.0   2712  1348 ?        S    19:11   0:00 grep cpuhotplug_do_spin_loop\ncpuhotplug03 1 TINFO: Onlining CPU 1\n  0 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  0 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  2 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  2 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  1 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  3 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  3 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\n  1 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop\ncpuhotplug03 1 TPASS: 2 cpuhotplug_do_spin_loop processes found on \tCPU1\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 2.0484728813171387,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "cpuhotplug04",
+            "status": "pass",
+            "test": {
+                "command": "cpuhotplug04.sh",
+                "arguments": [
+                    "-l",
+                    "1"
+                ],
+                "log": "Name:   cpuhotplug04\nDate:   Mon Aug  4 19:11:25 CST 2025\nDesc:   Does it prevent us from offlining the last CPU?\n\ncpuhotplug04 1 TPASS: System prevented us from offlining the last CPU - cpu3\ncpuhotplug04 2 TPASS: Success\n/opt/ltp/testcases/bin/cpuhotplug04.sh: 78: echo: echo: I/O error\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.4240474700927734,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "cpuhotplug05",
+            "status": "conf",
+            "test": {
+                "command": "cpuhotplug05.sh",
+                "arguments": [
+                    "-c",
+                    "1",
+                    "-l",
+                    "1",
+                    "-d",
+                    "/tmp"
+                ],
+                "log": "Name:   cpuhotplug05\nDate:   Mon Aug  4 19:11:26 CST 2025\nDesc:   Does sar behave properly during CPU hotplug events?\n\ncpuhotplug05 1 TCONF: 'sar' not found\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.25350213050842285,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "cpuhotplug06",
+            "status": "pass",
+            "test": {
+                "command": "cpuhotplug06.sh",
+                "arguments": [
+                    "-c",
+                    "1",
+                    "-l",
+                    "1"
+                ],
+                "log": "Name:   cpuhotplug06\nDate:   Mon Aug  4 19:11:26 CST 2025\nDesc:   Does top work properly when CPU hotplug events occur?\n\nCPU is 1\n 428523 ?        00:00:00 top\ncpuhotplug06 1 TPASS: PID 428523 still running.\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 2.286957263946533,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "cpuhotplug07",
+            "status": "conf",
+            "test": {
+                "command": "cpuhotplug07.sh",
+                "arguments": [
+                    "-c",
+                    "1",
+                    "-l",
+                    "1",
+                    "-d",
+                    "/usr/src/linux"
+                ],
+                "log": "Name:   cpuhotplug07\nDate:   Mon Aug  4 19:11:29 CST 2025\nDesc:   What happens when hotplugging during a heavy workload?\nIssue:  Hotplug bugs have been found during kernel compiles\n\ncpuhotplug07 1 TCONF: kernel directory - /usr/src/linux - does not exist\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.06608390808105469,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 13.299251079559326,
+        "passed": 5,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 2,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

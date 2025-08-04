@@ -1,0 +1,3053 @@
+{
+    "results": [
+        {
+            "test_fqn": "nfs01_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -v 3 -t udp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5790989398956299,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -v 3 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5685679912567139,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -v 4 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5657966136932373,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -v 4.1 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5614440441131592,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -v 4.2 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5574347972869873,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -6 -v 3 -t udp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5657289028167725,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -6 -v 3 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5688152313232422,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -6 -v 4 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5744895935058594,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -6 -v 4.1 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5625879764556885,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs01_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs01 1 TINFO: Running: nfs01.sh -6 -v 4.2 -t tcp\nnfs01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs01 1 TINFO: add local addr 10.0.0.2/24\nnfs01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs01 1 TINFO: add remote addr 10.0.0.1/24\nnfs01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs01 1 TINFO: Network config (local -- remote):\nnfs01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5627193450927734,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -v 3 -t udp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5761833190917969,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -v 3 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5600388050079346,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -v 4 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5659534931182861,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -v 4.1 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.562657356262207,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -v 4.2 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5671443939208984,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -6 -v 3 -t udp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.568077564239502,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -6 -v 3 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.561873197555542,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -6 -v 4 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5683372020721436,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -6 -v 4.1 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.578697919845581,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs02_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs02.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs02 1 TINFO: Running: nfs02.sh -6 -v 4.2 -t tcp\nnfs02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs02 1 TINFO: add local addr 10.0.0.2/24\nnfs02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs02 1 TINFO: add remote addr 10.0.0.1/24\nnfs02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs02 1 TINFO: Network config (local -- remote):\nnfs02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.559382438659668,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -v 3 -t udp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5702881813049316,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -v 3 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5647666454315186,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -v 4 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.563854455947876,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -v 4.1 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6820645332336426,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -v 4.2 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5922260284423828,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -6 -v 3 -t udp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5656635761260986,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -6 -v 3 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5650691986083984,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -6 -v 4 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5624723434448242,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -6 -v 4.1 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5583045482635498,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs03_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs03.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs03 1 TINFO: Running: nfs03.sh -6 -v 4.2 -t tcp\nnfs03 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs03 1 TINFO: add local addr 10.0.0.2/24\nnfs03 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs03 1 TINFO: add remote addr 10.0.0.1/24\nnfs03 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs03 1 TINFO: Network config (local -- remote):\nnfs03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs03 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5636744499206543,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -v 3 -t udp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5695888996124268,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -v 3 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5714082717895508,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -v 4 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5627548694610596,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -v 4.1 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5563778877258301,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -v 4.2 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5602896213531494,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -6 -v 3 -t udp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5616898536682129,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -6 -v 3 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.569267988204956,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -6 -v 4 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5564680099487305,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -6 -v 4.1 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5658035278320312,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs04_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs04.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs04 1 TINFO: Running: nfs04.sh -6 -v 4.2 -t tcp\nnfs04 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs04 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs04 1 TINFO: add local addr 10.0.0.2/24\nnfs04 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs04 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs04 1 TINFO: add remote addr 10.0.0.1/24\nnfs04 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs04 1 TINFO: Network config (local -- remote):\nnfs04 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs04 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs04 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs04 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.56429123878479,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -v 3 -t udp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5762226581573486,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -v 3 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.558992862701416,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -v 4 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5618088245391846,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -v 4.1 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5611188411712646,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -v 4.2 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5582709312438965,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -6 -v 3 -t udp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5641608238220215,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -6 -v 3 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.8411719799041748,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -6 -v 4 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6362080574035645,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -6 -v 4.1 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5648233890533447,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs05_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs05.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs05 1 TINFO: Running: nfs05.sh -6 -v 4.2 -t tcp\nnfs05 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs05 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs05 1 TINFO: add local addr 10.0.0.2/24\nnfs05 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs05 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs05 1 TINFO: add remote addr 10.0.0.1/24\nnfs05 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs05 1 TINFO: Network config (local -- remote):\nnfs05 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs05 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs05 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs05 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5619471073150635,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs06_v30_v40_ip4",
+            "status": "conf",
+            "test": {
+                "command": "nfs06.sh",
+                "arguments": [
+                    "-v",
+                    "3,3,3,4,4,4",
+                    "-t",
+                    "udp,udp,tcp,tcp,tcp,tcp"
+                ],
+                "log": "nfs06 1 TINFO: Running: nfs06.sh -v 3,3,3,4,4,4 -t udp,udp,tcp,tcp,tcp,tcp\nnfs06 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs06 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs06 1 TINFO: add local addr 10.0.0.2/24\nnfs06 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs06 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs06 1 TINFO: add remote addr 10.0.0.1/24\nnfs06 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs06 1 TINFO: Network config (local -- remote):\nnfs06 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs06 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs06 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs06 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5752644538879395,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs06_vall_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs06.sh",
+                "arguments": [
+                    "-v",
+                    "3,4,4.1,4.2,4.2,4.2",
+                    "-t",
+                    "tcp,tcp,tcp,tcp,tcp,tcp"
+                ],
+                "log": "nfs06 1 TINFO: Running: nfs06.sh -v 3,4,4.1,4.2,4.2,4.2 -t tcp,tcp,tcp,tcp,tcp,tcp\nnfs06 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs06 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs06 1 TINFO: add local addr 10.0.0.2/24\nnfs06 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs06 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs06 1 TINFO: add remote addr 10.0.0.1/24\nnfs06 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs06 1 TINFO: Network config (local -- remote):\nnfs06 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs06 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs06 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs06 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5663332939147949,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs06_v4x_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs06.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4,4.1,4.1,4.2,4.2,4.2",
+                    "-t",
+                    "tcp,tcp,tcp,tcp,tcp,tcp"
+                ],
+                "log": "nfs06 1 TINFO: Running: nfs06.sh -6 -v 4,4.1,4.1,4.2,4.2,4.2 -t tcp,tcp,tcp,tcp,tcp,tcp\nnfs06 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs06 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs06 1 TINFO: add local addr 10.0.0.2/24\nnfs06 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs06 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs06 1 TINFO: add remote addr 10.0.0.1/24\nnfs06 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs06 1 TINFO: Network config (local -- remote):\nnfs06 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs06 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs06 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs06 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.557321310043335,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -v 3 -t udp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5693345069885254,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -v 3 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5767788887023926,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -v 4 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6214315891265869,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -v 4.1 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5731601715087891,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -v 4.2 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.7052731513977051,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -6 -v 3 -t udp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5980215072631836,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -6 -v 3 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5631484985351562,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -6 -v 4 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5669596195220947,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -6 -v 4.1 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5594007968902588,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs07_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs07.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs07 1 TINFO: Running: nfs07.sh -6 -v 4.2 -t tcp\nnfs07 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs07 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs07 1 TINFO: add local addr 10.0.0.2/24\nnfs07 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs07 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs07 1 TINFO: add remote addr 10.0.0.1/24\nnfs07 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs07 1 TINFO: Network config (local -- remote):\nnfs07 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs07 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs07 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs07 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6779422760009766,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -v 3 -t udp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6017043590545654,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -v 3 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.557471752166748,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -v 4 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5661411285400391,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -v 4.1 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5620229244232178,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -v 4.2 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5616621971130371,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -6 -v 3 -t udp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.7649757862091064,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -6 -v 3 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6112682819366455,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -6 -v 4 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5628564357757568,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -6 -v 4.1 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5636413097381592,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs08_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs08.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs08 1 TINFO: Running: nfs08.sh -6 -v 4.2 -t tcp\nnfs08 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs08 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs08 1 TINFO: add local addr 10.0.0.2/24\nnfs08 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs08 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs08 1 TINFO: add remote addr 10.0.0.1/24\nnfs08 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs08 1 TINFO: Network config (local -- remote):\nnfs08 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs08 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs08 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs08 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5582592487335205,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -v 3 -t udp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5706331729888916,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -v 3 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5610935688018799,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -v 4 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5657472610473633,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -v 4.1 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5651626586914062,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -v 4.2 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5650219917297363,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -6 -v 3 -t udp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5616023540496826,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -6 -v 3 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5632569789886475,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -6 -v 4 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5591754913330078,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -6 -v 4.1 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5651350021362305,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs09_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs09.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs09 1 TINFO: Running: nfs09.sh -6 -v 4.2 -t tcp\nnfs09 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs09 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs09 1 TINFO: add local addr 10.0.0.2/24\nnfs09 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs09 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs09 1 TINFO: add remote addr 10.0.0.1/24\nnfs09 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs09 1 TINFO: Network config (local -- remote):\nnfs09 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs09 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs09 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs09 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5596561431884766,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -v 3 -t udp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5705726146697998,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -v 3 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.565528392791748,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -v 4 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5620605945587158,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -v 4.1 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5643870830535889,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -v 4.2 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5658462047576904,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -6 -v 3 -t udp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5740954875946045,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -6 -v 3 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6118190288543701,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -6 -v 4 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5730910301208496,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -6 -v 4.1 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5607452392578125,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfs10_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfs10.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfs10 1 TINFO: Running: nfs10.sh -6 -v 4.2 -t tcp\nnfs10 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfs10 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfs10 1 TINFO: add local addr 10.0.0.2/24\nnfs10 1 TINFO: add local addr fd00:1:1:1::2/64\nnfs10 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfs10 1 TINFO: add remote addr 10.0.0.1/24\nnfs10 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfs10 1 TINFO: Network config (local -- remote):\nnfs10 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfs10 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfs10 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfs10 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5597822666168213,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -v 3 -t udp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5719518661499023,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -v 3 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.7541623115539551,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -v 4 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.610304594039917,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -v 4.1 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5623722076416016,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -v 4.2 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.562427282333374,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -6 -v 3 -t udp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5634498596191406,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -6 -v 3 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5585544109344482,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -6 -v 4 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.564673900604248,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -6 -v 4.1 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5652849674224854,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfslock01_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfslock01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfslock01 1 TINFO: Running: nfslock01.sh -6 -v 4.2 -t tcp\nnfslock01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfslock01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfslock01 1 TINFO: add local addr 10.0.0.2/24\nnfslock01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfslock01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfslock01 1 TINFO: add remote addr 10.0.0.1/24\nnfslock01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfslock01 1 TINFO: Network config (local -- remote):\nnfslock01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfslock01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfslock01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfslock01 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5621945858001709,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -v 3 -t udp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.824455738067627,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -v 3 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.6344175338745117,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -v 4 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5643026828765869,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -v 4.1 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5654721260070801,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -v 4.2 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5748484134674072,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -6 -v 3 -t udp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5699732303619385,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -6 -v 3 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5648512840270996,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -6 -v 4 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5610032081604004,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -6 -v 4.1 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5661606788635254,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat01_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat01.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "nfsstat01 1 TINFO: Running: nfsstat01.sh -6 -v 4.2 -t tcp\nnfsstat01 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat01 1 TINFO: add local addr 10.0.0.2/24\nnfsstat01 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat01 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat01 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat01 1 TINFO: Network config (local -- remote):\nnfsstat01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat01 1 TCONF: 'nfsstat' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5678164958953857,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "nfsstat02",
+            "status": "conf",
+            "test": {
+                "command": "nfsstat02.sh",
+                "arguments": [],
+                "log": "nfsstat02 1 TINFO: Running: nfsstat02.sh \nnfsstat02 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nnfsstat02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nnfsstat02 1 TINFO: add local addr 10.0.0.2/24\nnfsstat02 1 TINFO: add local addr fd00:1:1:1::2/64\nnfsstat02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nnfsstat02 1 TINFO: add remote addr 10.0.0.1/24\nnfsstat02 1 TINFO: add remote addr fd00:1:1:1::1/64\nnfsstat02 1 TINFO: Network config (local -- remote):\nnfsstat02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nnfsstat02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nnfsstat02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nnfsstat02 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5616612434387207,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v30_ip4u",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -v 3 -t udp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5712072849273682,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v30_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -v 3 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.564399003982544,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v40_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -v 4 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5620219707489014,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v41_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -v 4.1 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5619616508483887,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v42_ip4t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -v 4.2 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5603060722351074,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v30_ip6u",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "udp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -6 -v 3 -t udp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5567622184753418,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v30_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "3",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -6 -v 3 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5609147548675537,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v40_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -6 -v 4 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.563460111618042,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v41_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.1",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -6 -v 4.1 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5626981258392334,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "fsx_v42_ip6t",
+            "status": "conf",
+            "test": {
+                "command": "fsx.sh",
+                "arguments": [
+                    "-6",
+                    "-v",
+                    "4.2",
+                    "-t",
+                    "tcp"
+                ],
+                "log": "fsx 1 TINFO: Running: fsx.sh -6 -v 4.2 -t tcp\nfsx 1 TINFO: Tested kernel: Linux revyos-lpi4a 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64 GNU/Linux\nfsx 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nfsx 1 TINFO: add local addr 10.0.0.2/24\nfsx 1 TINFO: add local addr fd00:1:1:1::2/64\nfsx 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nfsx 1 TINFO: add remote addr 10.0.0.1/24\nfsx 1 TINFO: add remote addr fd00:1:1:1::1/64\nfsx 1 TINFO: Network config (local -- remote):\nfsx 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nfsx 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nfsx 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nfsx 1 TCONF: 'exportfs' not found\n\nSummary:\npassed   0\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.5628993511199951,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 71.76783394813538,
+        "passed": 0,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 124,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

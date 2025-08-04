@@ -1,0 +1,45 @@
+{
+    "results": [
+        {
+            "test_fqn": "FCNTL_LOCKTESTS",
+            "status": "pass",
+            "test": {
+                "command": "locktests",
+                "arguments": [
+                    "-n",
+                    "100",
+                    "-f",
+                    "/tmp/fcntl_locktest_testfile"
+                ],
+                "log": "Init\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\nInit\nprocess initialization\n\n--------------------------------------\n\n\n\n\n\n\n\n\n\n\n\n\nprocess number : 100 - Remote clients: 0 local client 1 - Total client 1 - Total concurent tests: 100\nprocess number running test successfully :\n100 process of 100 successfully ran test : WRITE ON A READ  LOCK\n100 process of 100 successfully ran test : WRITE ON A WRITE LOCK\n100 process of 100 successfully ran test : READ  ON A READ  LOCK\n100 process of 100 successfully ran test : READ  ON A WRITE LOCK\n100 process of 100 successfully ran test : SET A READ  LOCK ON A READ  LOCK\n100 process of 100 successfully ran test : SET A WRITE LOCK ON A WRITE LOCK\n100 process of 100 successfully ran test : SET A WRITE LOCK ON A READ  LOCK\n100 process of 100 successfully ran test : SET A READ  LOCK ON A WRITE LOCK\n100 process of 100 successfully ran test : READ LOCK THE WHOLE FILE BYTE BY BYTE\n100 process of 100 successfully ran test : WRITE LOCK THE WHOLE FILE BYTE BY BYTE\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 2.2947134971618652,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 2.2947134971618652,
+        "passed": 1,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 0,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

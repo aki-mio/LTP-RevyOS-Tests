@@ -1,0 +1,1077 @@
+{
+    "results": [
+        {
+            "test_fqn": "hugefallocate01",
+            "status": "pass",
+            "test": {
+                "command": "hugefallocate01",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugUd2Bax as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugUd2Bax/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugefallocate01.c:142: TPASS: free_after_delete == free_initial (2)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.9731800556182861,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugefallocate02",
+            "status": "pass",
+            "test": {
+                "command": "hugefallocate02",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugvz94eQ as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugvz94eQ/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugefallocate02.c:64: TPASS: free_end == free_initial (3)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.28108763694763184,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugefork01",
+            "status": "pass",
+            "test": {
+                "command": "hugefork01",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugLcjMIO as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugLcjMIO/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugefork01.c:53: TPASS: Expect: 0x1234abcd == child_readback (0x1234abcd)\nhugefork01.c:58: TPASS: Expect: 0xedcb5432 == parent_readback (0xedcb5432)\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24774885177612305,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugefork02",
+            "status": "pass",
+            "test": {
+                "command": "hugefork02",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 5 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug7HfHV2 as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug7HfHV2/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugefork02.c:65: TPASS: Successfully tested shared hugetlb memory with multiple procs\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.5537736415863037,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap01",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap01",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugJWLoUF as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ntst_buffers.c:57: TINFO: Test is using guarded buffers\nhugemmap01.c:79: TINFO: Mounting none to /tmp/LTP_hugJWLoUF fstyp=hugetlbfs flags=0\nhugemmap01.c:55: TPASS: call succeeded\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.28526997566223145,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap02",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap02",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugJ4qlVo as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ntst_buffers.c:57: TINFO: Test is using guarded buffers\nhugemmap02.c:126: TINFO: Mounting none to /tmp/LTP_hugJ4qlVo fstyp=hugetlbfs flags=0\nhugemmap02.c:91: TPASS: huge mmap succeeded (64-bit)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24541330337524414,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap04",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap04",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugNKMy5N as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ntst_buffers.c:57: TINFO: Test is using guarded buffers\nhugemmap04.c:97: TINFO: Mounting none to /tmp/LTP_hugNKMy5N fstyp=hugetlbfs flags=0\nhugemmap04.c:54: TINFO: Size of huge pages is 2048 KB\nhugemmap04.c:71: TPASS: Succeeded mapping file using 128 pages\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.33863306045532227,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap05",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap05",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugNDCuZF as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap05.c:224: TINFO: original nr_overcommit_hugepages is 0\nhugemmap05.c:232: TINFO: Mounting (null) to /tmp/LTP_hugNDCuZF/hugemmap05 fstyp=hugetlbfs flags=0\nhugemmap05.c:98: TINFO: check /proc/meminfo before allocation.\nhugemmap05.c:274: TINFO: HugePages_Total is 3.\nhugemmap05.c:274: TINFO: HugePages_Free is 3.\nhugemmap05.c:274: TINFO: HugePages_Surp is 1.\nhugemmap05.c:274: TINFO: HugePages_Rsvd is 3.\nhugemmap05.c:249: TINFO: First hex is 7070707\nhugemmap05.c:133: TINFO: check /proc/meminfo.\nhugemmap05.c:274: TINFO: HugePages_Total is 3.\nhugemmap05.c:274: TINFO: HugePages_Free is 0.\nhugemmap05.c:274: TINFO: HugePages_Surp is 1.\nhugemmap05.c:274: TINFO: HugePages_Rsvd is 0.\nhugemmap05.c:157: TPASS: hugepages overcommit test pass\nhugemmap05.c:177: TINFO: restore nr_overcommit_hugepages to 0.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.5365655422210693,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap06",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap06",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 255 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugw3w4uY as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap06.c:112: TPASS: No regression found\nhugemmap06.c:112: TPASS: No regression found\nhugemmap06.c:112: TPASS: No regression found\nhugemmap06.c:112: TPASS: No regression found\nhugemmap06.c:112: TPASS: No regression found\n\nSummary:\npassed   5\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.053816318511963,
+                "failed": 0,
+                "passed": 5,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap07",
+            "status": "fail",
+            "test": {
+                "command": "hugemmap07",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugmqKPYr as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugmqKPYr/hugetlbfs fstyp=hugetlbfs flags=0\ntst_taint.c:85: TCONF: Ignoring already set kernel warning taint\ntst_taint.c:92: TINFO: tainted: D (OOPS/BUG)\ntst_taint.c:92: TINFO: tainted: W (Warning)\ntst_taint.c:95: TBROK: Kernel is already tainted\n\nSummary:\npassed   0\nfailed   0\nbroken   1\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "34"
+                ],
+                "duration": 0.16815710067749023,
+                "failed": 0,
+                "passed": 0,
+                "broken": 1,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "fail"
+            }
+        },
+        {
+            "test_fqn": "hugemmap08",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap08",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugF8g3Wm as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugF8g3Wm/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap08.c:108: TINFO: With overcommit testing...\nhugemmap08.c:50: TINFO: Free: 3 hugepages available: chunk1=2 chunk2=2\nhugemmap08.c:68: TINFO: Looks like we've overcommitted, testing...\nhugemmap08.c:90: TPASS: Successful with overcommit pages\nhugemmap08.c:104: TINFO: Without overcommit testing...\nhugemmap08.c:50: TINFO: Free: 3 hugepages available: chunk1=2 chunk2=2\nhugemmap08.c:63: TPASS: Successful without overcommit pages\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23396658897399902,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap09",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap09",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugn2mcoE as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugn2mcoE/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap09.c:35: TINFO: Write s to 0x3fb7400000 via shared mapping\nhugemmap09.c:41: TINFO: Write p to 0x3fb7400000 via private mapping\nhugemmap09.c:47: TINFO: Read s from 0x3fb7400000 via shared mapping\nhugemmap09.c:54: TPASS: Successful\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2311263084411621,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap10",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap10",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugk2z3Ve as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugk2z3Ve/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap10.c:386: TINFO: Base pool size: 0\nhugemmap10.c:313: TINFO: Clean...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:386: TINFO: Base pool size: 1\nhugemmap10.c:313: TINFO: Clean...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:386: TINFO: Base pool size: 2\nhugemmap10.c:313: TINFO: Clean...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:386: TINFO: Base pool size: 3\nhugemmap10.c:313: TINFO: Clean...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Untouched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, shared...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:313: TINFO: Touched, private...\nhugemmap10.c:364: TINFO: OK\nhugemmap10.c:429: TPASS: Hugepages Counters works as expected.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.40436649322509766,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap11",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap11",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugS8krN8 as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugS8krN8/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap11.c:56: TPASS: Direct-IO read/write to/from hugepages is successful\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23115301132202148,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap12",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap12",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugojjr1V as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugojjr1V/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap12.c:37: TINFO: Reserve count before map: 0\nhugemmap12.c:42: TINFO: Reserve count after map: 1\nhugemmap12.c:46: TINFO: Reserve count after fadvise: 1\nhugemmap12.c:53: TINFO: Reserve count after close: 0\nhugemmap12.c:55: TPASS: end_rsvd == initial_rsvd (0)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23914194107055664,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap13",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap13",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugix065C as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugix065C/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap13.c:59: TINFO: Mapped hugetlb at 0x100000000\nhugemmap13.c:85: TPASS: Successful\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.22970914840698242,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap14",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap14",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug6htYip as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug6htYip/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap14.c:44: TINFO: Mapping hugepage at ffe00000...\nhugemmap14.c:68: TINFO: Mapping normal page at 100000000...\nhugemmap14.c:96: TINFO: Mapping normal page at 8f0000000...\nhugemmap14.c:116: TPASS: Successful\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24355149269104004,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap15",
+            "status": "fail",
+            "test": {
+                "command": "hugemmap15",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugKPhZKp as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugKPhZKp/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap15.c:195: TFAIL: icache unclean\n\nHINT: You _MAY_ be missing kernel fixes:\n\nhttps://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cbf52afdc0eb\n\nSummary:\npassed   0\nfailed   1\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "1"
+                ],
+                "duration": 0.21641087532043457,
+                "failed": 1,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "fail"
+            }
+        },
+        {
+            "test_fqn": "hugemmap16",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap16",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugKO5CJB as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugKO5CJB/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap16.c:37: TINFO: Reserve count before map: 0\nhugemmap16.c:42: TINFO: Reserve count after map: 1\nhugemmap16.c:47: TINFO: Reserve count after madvise: 1\nhugemmap16.c:52: TINFO: Reserve count after close(): 0\nhugemmap16.c:54: TPASS: end_rsvd == initial_rsvd (0)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2902352809906006,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap17",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap17",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 4 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugc643Uh as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugc643Uh/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap17.c:57: TINFO: High map at 0xa0000000\nhugemmap17.c:67: TPASS: Successful\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2358553409576416,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap18",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap18",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 4 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug53uHhX as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug53uHhX/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap18.c:54: TINFO: Mapped at 0x3fb6c00000, length 0x200000\nhugemmap18.c:117: TPASS: mmap worked as expected with misaligned addr and length\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.21514296531677246,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap19",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap19",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 4 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugNdEmbq as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugNdEmbq/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap19.c:54: TINFO: Initial free hugepages: 4\nhugemmap19.c:60: TINFO: After Mapping reference map, Free hugepages: 4\nhugemmap19.c:62: TINFO: Mapped Address Range: 0x3f9f000000-0x3f9f3fffff\nhugemmap19.c:68: TINFO: After instantiate the pages, Free hugepages: 2\nhugemmap19.c:84: TINFO: Replacing map at 0x3f9f200000 with map from offset 0x1000...\nhugemmap19.c:98: TINFO: After Mapping with buggy offset, Free hugepages: 3\nhugemmap19.c:115: TPASS: Successful but inconclusive\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.39719605445861816,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap20",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap20",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug5FFrmv as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug5FFrmv/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap20.c:49: TPASS: mlock/munlock with MAP_PRIVATE hugetlb mmap\nhugemmap20.c:49: TPASS: mlock/munlock with MAP_SHARED hugetlb mmap\nhugemmap20.c:49: TPASS: mlock/munlock with MAP_PRIVATE | MAP_LOCKED hugetlb mmap\nhugemmap20.c:49: TPASS: mlock/munlock with MAP_SHARED | MAP_LOCKED hugetlb mmap\n\nSummary:\npassed   4\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2716977596282959,
+                "failed": 0,
+                "passed": 4,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap21",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap21",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 6 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugq69zKx as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugq69zKx/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap21.c:31: TINFO: Thread 0 (pid 429279): Mapped at address 0x3fa2800000\nhugemmap21.c:31: TINFO: Thread 1 (pid 429280): Mapped at address 0x3fa2800000\nhugemmap21.c:31: TINFO: Thread 2 (pid 429281): Mapped at address 0x3fa2800000\nhugemmap21.c:31: TINFO: Thread 3 (pid 429282): Mapped at address 0x3fa2800000\nhugemmap21.c:31: TINFO: Thread 4 (pid 429283): Mapped at address 0x3fa2800000\nhugemmap21.c:48: TINFO: Thread 2 (pid 429281): Pattern verified\nhugemmap21.c:48: TINFO: Thread 0 (pid 429279): Pattern verified\nhugemmap21.c:48: TINFO: Thread 3 (pid 429282): Pattern verified\nhugemmap21.c:48: TINFO: Thread 1 (pid 429280): Pattern verified\nhugemmap21.c:48: TINFO: Thread 4 (pid 429283): Pattern verified\nhugemmap21.c:89: TPASS: mmap COW working as expected.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24239444732666016,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap22",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap22",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugcvyytJ as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugcvyytJ/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap22.c:61: TPASS: Iter 0: Successfully verified the mmap area.\nhugemmap22.c:61: TPASS: Iter 1: Successfully verified the mmap area.\n\nSummary:\npassed   2\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2606465816497803,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap23",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap23",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug2X5vdN as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug2X5vdN/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap23.c:160: TINFO: Test Name: R->RW\nhugemmap23.c:73: TINFO: Read back 0\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:73: TINFO: Read back 0\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:182: TPASS: Successfully tested mprotect R->RW\nhugemmap23.c:160: TINFO: Test Name: RW->R\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:182: TPASS: Successfully tested mprotect RW->R\nhugemmap23.c:160: TINFO: Test Name: R->RW 1/2\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faa800000 (sig_expected=0x3faa800000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:73: TINFO: Read back 0\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:182: TPASS: Successfully tested mprotect R->RW 1/2\nhugemmap23.c:160: TINFO: Test Name: RW->R 1/2\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faa800000 (sig_expected=0x3faa800000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:73: TINFO: Read back 0\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:182: TPASS: Successfully tested mprotect RW->R 1/2\nhugemmap23.c:160: TINFO: Test Name: NONE->R\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:105: TINFO: On Read: -1\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:182: TPASS: Successfully tested mprotect NONE->R\nhugemmap23.c:160: TINFO: Test Name: NONE->RW\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:105: TINFO: On Read: -1\nhugemmap23.c:49: TINFO: SIGSEGV at 0x3faaa00000 (sig_expected=0x3faaa00000)\nhugemmap23.c:107: TINFO: On Write: -1\nhugemmap23.c:73: TINFO: Read back 305441741\nhugemmap23.c:105: TINFO: On Read: 0\nhugemmap23.c:107: TINFO: On Write: 0\nhugemmap23.c:182: TPASS: Successfully tested mprotect NONE->RW\n\nSummary:\npassed   6\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.8424556255340576,
+                "failed": 0,
+                "passed": 6,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap24",
+            "status": "fail",
+            "test": {
+                "command": "hugemmap24",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 4 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugu2pKZr as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugu2pKZr/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x20000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x30000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x40000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x50000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x60000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x70000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x80000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x90000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xa0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xb0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xc0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xd0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xe0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0xf0000000000: ENOMEM (12)\nhugemmap24.c:62: TINFO: can't use slice_boundary: 0x100000000000: ENOMEM (12)\nhugemmap24.c:71: TFAIL: couldn't find 2 free neighbour slices: ENOMEM (12)\n\nSummary:\npassed   0\nfailed   1\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "1"
+                ],
+                "duration": 0.23339343070983887,
+                "failed": 1,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "fail"
+            }
+        },
+        {
+            "test_fqn": "hugemmap25",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap25",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug7TJmCY as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hug7TJmCY/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap25.c:85: TINFO: Normal mapping at 0x3fad400000\nhugemmap25.c:42: TINFO: mremap(MAYMOVE|FIXED) disallowed: EINVAL (22)\nhugemmap25.c:96: TPASS: Successfully tested mremap hpage near normal mapping\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2553679943084717,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap26",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap26",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 3 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugIVyYQh as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugIVyYQh/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap26.c:65: TINFO: Hugepage mapping at 0x3f85a00000\nhugemmap26.c:77: TPASS: Successfully tested mremap normal near hpage mapping\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24300122261047363,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap27",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap27",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugtKhaUQ as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugtKhaUQ/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap27.c:70: TINFO: Reserve all hugepages 2\nhugemmap27.c:75: TINFO: Write to 0x3f86200000 to steal reserved page\nhugemmap27.c:80: TPASS: Successful with SIGSEGV received\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23822426795959473,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap28",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap28",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugaX8smf as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugaX8smf/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap28.c:41: TPASS: initial_resv == end_resv (0)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2520272731781006,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap29",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap29",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugsmOlI1 as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugsmOlI1/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap29.c:78: TPASS: Successfully tested shared/private mmaping and its data\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23527908325195312,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap30",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap30",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugcRPA6V as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugcRPA6V/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap30.c:34: TINFO: map_rsvd: 1\nhugemmap30.c:38: TINFO: readahead_rsvd: 1\nhugemmap30.c:46: TPASS: end_rsvd == initial_rsvd (0)\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23745298385620117,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap31",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap31",
+                "arguments": [],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugjWhyvO as tmpdir (tmpfs filesystem)\ntst_test.c:1144: TINFO: Mounting none to /tmp/LTP_hugjWhyvO/hugetlbfs fstyp=hugetlbfs flags=0\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap31.c:47: TPASS: Successfully tested data between two shared mappings\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2366626262664795,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap32",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap32",
+                "arguments": [],
+                "log": "tst_taint.c:85: TCONF: Ignoring already set kernel warning taint\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap32.c:39: TPASS: Successfully freed the gigantic hugepages\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.48541760444641113,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap34",
+            "status": "conf",
+            "test": {
+                "command": "hugemmap34",
+                "arguments": [],
+                "log": "tst_test.c:1325: TCONF: This arch 'unknown' is not supported for test!\n",
+                "retval": [
+                    "32"
+                ],
+                "duration": 0.01146245002746582,
+                "failed": 0,
+                "passed": 0,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "conf"
+            }
+        },
+        {
+            "test_fqn": "hugemmap05_1",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap05",
+                "arguments": [
+                    "-m"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug1ODinm as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap05.c:224: TINFO: original nr_overcommit_hugepages is 0\nhugemmap05.c:232: TINFO: Mounting (null) to /tmp/LTP_hug1ODinm/hugemmap05 fstyp=hugetlbfs flags=0\nhugemmap05.c:98: TINFO: check /proc/meminfo before allocation.\nhugemmap05.c:274: TINFO: HugePages_Total is 3.\nhugemmap05.c:274: TINFO: HugePages_Free is 3.\nhugemmap05.c:274: TINFO: HugePages_Surp is 1.\nhugemmap05.c:274: TINFO: HugePages_Rsvd is 3.\nhugemmap05.c:114: TINFO: shmid: 0xc21802a\nhugemmap05.c:249: TINFO: First hex is 7070707\nhugemmap05.c:133: TINFO: check /proc/meminfo.\nhugemmap05.c:274: TINFO: HugePages_Total is 3.\nhugemmap05.c:274: TINFO: HugePages_Free is 0.\nhugemmap05.c:274: TINFO: HugePages_Surp is 1.\nhugemmap05.c:274: TINFO: HugePages_Rsvd is 0.\nhugemmap05.c:157: TPASS: hugepages overcommit test pass\nhugemmap05.c:177: TINFO: restore nr_overcommit_hugepages to 0.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2369544506072998,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap05_2",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap05",
+                "arguments": [
+                    "-s"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_huguHa8aW as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap05.c:224: TINFO: original nr_overcommit_hugepages is 0\nhugemmap05.c:232: TINFO: Mounting (null) to /tmp/LTP_huguHa8aW/hugemmap05 fstyp=hugetlbfs flags=0\nhugemmap05.c:87: TINFO: check sysfs before allocation.\nhugemmap05.c:263: TINFO: HugePages_Total is 3.\nhugemmap05.c:263: TINFO: HugePages_Free is 3.\nhugemmap05.c:263: TINFO: HugePages_Surp is 1.\nhugemmap05.c:263: TINFO: HugePages_Rsvd is 3.\nhugemmap05.c:249: TINFO: First hex is 7070707\nhugemmap05.c:122: TINFO: check sysfs.\nhugemmap05.c:263: TINFO: HugePages_Total is 3.\nhugemmap05.c:263: TINFO: HugePages_Free is 0.\nhugemmap05.c:263: TINFO: HugePages_Surp is 1.\nhugemmap05.c:263: TINFO: HugePages_Rsvd is 0.\nhugemmap05.c:157: TPASS: hugepages overcommit test pass\nhugemmap05.c:177: TINFO: restore nr_overcommit_hugepages to 0.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23241448402404785,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugemmap05_3",
+            "status": "pass",
+            "test": {
+                "command": "hugemmap05",
+                "arguments": [
+                    "-s",
+                    "-m"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 2 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugfsM42R as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugemmap05.c:224: TINFO: original nr_overcommit_hugepages is 0\nhugemmap05.c:232: TINFO: Mounting (null) to /tmp/LTP_hugfsM42R/hugemmap05 fstyp=hugetlbfs flags=0\nhugemmap05.c:87: TINFO: check sysfs before allocation.\nhugemmap05.c:263: TINFO: HugePages_Total is 3.\nhugemmap05.c:263: TINFO: HugePages_Free is 3.\nhugemmap05.c:263: TINFO: HugePages_Surp is 1.\nhugemmap05.c:263: TINFO: HugePages_Rsvd is 3.\nhugemmap05.c:114: TINFO: shmid: 0xc21802b\nhugemmap05.c:249: TINFO: First hex is 7070707\nhugemmap05.c:122: TINFO: check sysfs.\nhugemmap05.c:263: TINFO: HugePages_Total is 3.\nhugemmap05.c:263: TINFO: HugePages_Free is 0.\nhugemmap05.c:263: TINFO: HugePages_Surp is 1.\nhugemmap05.c:263: TINFO: HugePages_Rsvd is 0.\nhugemmap05.c:157: TPASS: hugepages overcommit test pass\nhugemmap05.c:177: TINFO: restore nr_overcommit_hugepages to 0.\n\nSummary:\npassed   1\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23373723030090332,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmat01",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmat01",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugdwT8SU as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\nhugeshmat01.c:145: TPASS: conditions and functionality are correct\n\nSummary:\npassed   15\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23607182502746582,
+                "failed": 0,
+                "passed": 15,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmat02",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmat02",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugyARsbz as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\nhugeshmat02.c:64: TPASS: shmat failed as expected: EINVAL (22)\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2416083812713623,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmat03",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmat03",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hug2KnG9d as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmat03.c:57: TPASS: shmat failed as expected: EACCES (13)\nhugeshmat03.c:57: TPASS: shmat failed as expected: EACCES (13)\nhugeshmat03.c:57: TPASS: shmat failed as expected: EACCES (13)\nhugeshmat03.c:57: TPASS: shmat failed as expected: EACCES (13)\nhugeshmat03.c:57: TPASS: shmat failed as expected: EACCES (13)\n\nSummary:\npassed   5\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.249436616897583,
+                "failed": 0,
+                "passed": 5,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmat04",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmat04",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 1 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugTO4A0Y as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ntst_hugepage.c:84: TINFO: 514 hugepage(s) reserved\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\nhugeshmat04.c:63: TINFO: attaching at 0x40000000\nhugeshmat04.c:42: TPASS: No regression found.\n\nSummary:\npassed   15\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 5.19537878036499,
+                "failed": 0,
+                "passed": 15,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmat05",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmat05",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 5 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugkExWXz as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmat05.c:59: TINFO: allocated 8384512 huge bytes\nhugeshmat05.c:59: TINFO: allocated 8384511 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097152 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097153 huge bytes\nhugeshmat05.c:83: TPASS: No regression found.\nhugeshmat05.c:59: TINFO: allocated 8384512 huge bytes\nhugeshmat05.c:59: TINFO: allocated 8384511 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097152 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097153 huge bytes\nhugeshmat05.c:83: TPASS: No regression found.\nhugeshmat05.c:59: TINFO: allocated 8384512 huge bytes\nhugeshmat05.c:59: TINFO: allocated 8384511 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097152 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097153 huge bytes\nhugeshmat05.c:83: TPASS: No regression found.\nhugeshmat05.c:59: TINFO: allocated 8384512 huge bytes\nhugeshmat05.c:59: TINFO: allocated 8384511 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097152 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097153 huge bytes\nhugeshmat05.c:83: TPASS: No regression found.\nhugeshmat05.c:59: TINFO: allocated 8384512 huge bytes\nhugeshmat05.c:59: TINFO: allocated 8384511 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097152 huge bytes\nhugeshmat05.c:59: TINFO: allocated 2097153 huge bytes\nhugeshmat05.c:83: TPASS: No regression found.\n\nSummary:\npassed   5\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.22264766693115234,
+                "failed": 0,
+                "passed": 5,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmctl01",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmctl01",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugC1ez7E as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #0\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #1\nhugeshmctl01.c:241: TPASS: new mode and change time are correct\nhugeshmctl01.c:257: TPASS: shmctl in this function failed as expected, shared memory appears to be removed\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #0\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #1\nhugeshmctl01.c:241: TPASS: new mode and change time are correct\nhugeshmctl01.c:257: TPASS: shmctl in this function failed as expected, shared memory appears to be removed\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #0\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #1\nhugeshmctl01.c:241: TPASS: new mode and change time are correct\nhugeshmctl01.c:257: TPASS: shmctl in this function failed as expected, shared memory appears to be removed\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #0\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #1\nhugeshmctl01.c:241: TPASS: new mode and change time are correct\nhugeshmctl01.c:257: TPASS: shmctl in this function failed as expected, shared memory appears to be removed\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #0\nhugeshmctl01.c:173: TPASS: pid, size, # of attaches and mode are correct - pass #1\nhugeshmctl01.c:241: TPASS: new mode and change time are correct\nhugeshmctl01.c:257: TPASS: shmctl in this function failed as expected, shared memory appears to be removed\n\nSummary:\npassed   20\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 5.288415193557739,
+                "failed": 0,
+                "passed": 20,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmctl02",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmctl02",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugyxAnCR as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmctl02.c:105: TINFO: Testing variant: libc shmctl()\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:80: TCONF: EFAULT is skipped for libc variant\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:105: TINFO: Testing variant: __NR_shmctl syscall\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EFAULT (14)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\nhugeshmctl02.c:91: TPASS: shmctl failed as expected: EINVAL (22)\n\nSummary:\npassed   30\nfailed   0\nbroken   0\nskipped  10\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.2334918975830078,
+                "failed": 0,
+                "passed": 30,
+                "broken": 0,
+                "skipped": 10,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmctl03",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmctl03",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_tmpdir.c:316: TINFO: Using /tmp/LTP_hugrUUQGP as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EACCES (13)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EACCES (13)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EACCES (13)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EACCES (13)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EACCES (13)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\nhugeshmctl03.c:91: TPASS: shmctl failed as expected: EPERM (1)\n\nSummary:\npassed   15\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24304628372192383,
+                "failed": 0,
+                "passed": 15,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmdt01",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmdt01",
+                "arguments": [
+                    "-i",
+                    "5"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmdt01.c:95: TPASS: huge shared memory detached correctly\nhugeshmdt01.c:95: TPASS: huge shared memory detached correctly\nhugeshmdt01.c:95: TPASS: huge shared memory detached correctly\nhugeshmdt01.c:95: TPASS: huge shared memory detached correctly\nhugeshmdt01.c:95: TPASS: huge shared memory detached correctly\n\nSummary:\npassed   5\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23094797134399414,
+                "failed": 0,
+                "passed": 5,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmget01",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmget01",
+                "arguments": [
+                    "-i",
+                    "10"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\nhugeshmget01.c:45: TPASS: size, pid & mode are correct\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.24483633041381836,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmget02",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmget02",
+                "arguments": [
+                    "-i",
+                    "10"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EINVAL (22)\nhugeshmget02.c:63: TPASS: shmget failed as expected: EEXIST (17)\nhugeshmget02.c:63: TPASS: shmget failed as expected: ENOENT (2)\n\nSummary:\npassed   40\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23979687690734863,
+                "failed": 0,
+                "passed": 40,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmget03",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmget03",
+                "arguments": [
+                    "-i",
+                    "10"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\nhugeshmget03.c:39: TPASS: shmget failed as expected: ENOSPC (28)\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.23493432998657227,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmget05",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmget05",
+                "arguments": [
+                    "-i",
+                    "10"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 128 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\nhugeshmget05.c:54: TPASS: shmget failed as expected: EACCES (13)\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.249847412109375,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "hugeshmget06",
+            "status": "pass",
+            "test": {
+                "command": "hugeshmget06",
+                "arguments": [
+                    "-i",
+                    "10"
+                ],
+                "log": "tst_hugepage.c:84: TINFO: 4 hugepage(s) reserved\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nhugeshmget06.c:57: TINFO: hugepage size is 2097152\nhugeshmget06.c:59: TINFO: shmid: 0xc22802a\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\nhugeshmget06.c:30: TINFO: shmaddr: 0x3f8aa00000\nhugeshmget06.c:51: TPASS: shm hugepages works correctly\n\nSummary:\npassed   10\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.35892438888549805,
+                "failed": 0,
+                "passed": 10,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 27.069474458694458,
+        "passed": 250,
+        "failed": 2,
+        "broken": 1,
+        "skipped": 13,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

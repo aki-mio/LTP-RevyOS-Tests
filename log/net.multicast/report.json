@@ -1,0 +1,97 @@
+{
+    "results": [
+        {
+            "test_fqn": "mc_cmds",
+            "status": "pass",
+            "test": {
+                "command": "mc_cmds.sh",
+                "arguments": [],
+                "log": "mc_cmds 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nmc_cmds 1 TINFO: add local addr 10.0.0.2/24\nmc_cmds 1 TINFO: add local addr fd00:1:1:1::2/64\nmc_cmds 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nmc_cmds 1 TINFO: add remote addr 10.0.0.1/24\nmc_cmds 1 TINFO: add remote addr fd00:1:1:1::1/64\nmc_cmds 1 TINFO: Network config (local -- remote):\nmc_cmds 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nmc_cmds 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nmc_cmds 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nmc_cmds 1 TINFO: Ping all-host-groups over specified interface\nmc_cmds 1 TPASS: Test Successful\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.5892384052276611,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "mc_commo",
+            "status": "pass",
+            "test": {
+                "command": "mc_commo.sh",
+                "arguments": [],
+                "log": "mc_commo 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nmc_commo 1 TINFO: add local addr 10.0.0.2/24\nmc_commo 1 TINFO: add local addr fd00:1:1:1::2/64\nmc_commo 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nmc_commo 1 TINFO: add remote addr 10.0.0.1/24\nmc_commo 1 TINFO: add remote addr fd00:1:1:1::1/64\nmc_commo 1 TINFO: Network config (local -- remote):\nmc_commo 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nmc_commo 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nmc_commo 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nmc_commo 1 TINFO: Start mc_recv 224.0.0.3 10.0.0.2 36324\nmc_commo 1 TINFO: Start on  mc_send 224.0.0.3 10.0.0.1 36324 10\nmc_commo 1 TINFO: Waiting for 100 sec.! Do not interrupt.\nmc_commo 1 TPASS: Test Successful\nmc_commo 2 TINFO: Start mc_recv 224.0.0.3 10.0.0.2 36324\nmc_commo 2 TINFO: Start on  mc_send 224.0.0.3 10.0.0.1 36324 10\nmc_commo 2 TINFO: Waiting for 100 sec.! Do not interrupt.\nmc_commo 2 TPASS: Test Successful\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 231.02693557739258,
+                "failed": 0,
+                "passed": 2,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "mc_member",
+            "status": "pass",
+            "test": {
+                "command": "mc_member.sh",
+                "arguments": [],
+                "log": "mc_member 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nmc_member 1 TINFO: add local addr 10.0.0.2/24\nmc_member 1 TINFO: add local addr fd00:1:1:1::2/64\nmc_member 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nmc_member 1 TINFO: add remote addr 10.0.0.1/24\nmc_member 1 TINFO: add remote addr fd00:1:1:1::1/64\nmc_member 1 TINFO: Network config (local -- remote):\nmc_member 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nmc_member 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nmc_member 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nmc_member 1 TINFO: doing test.\nmc_member 1 TINFO: Running mc_member_e on 3.3.3.3\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nltp_ns_veth2    8      224.10.10.11\nltp_ns_veth2    8      224.10.10.12\nltp_ns_veth2    8      224.10.10.13\nltp_ns_veth2    8      224.10.10.14\nltp_ns_veth2    8      224.10.10.15\nltp_ns_veth2    8      224.10.10.16\nltp_ns_veth2    8      224.10.10.17\nltp_ns_veth2    8      224.10.10.18\nltp_ns_veth2    8      224.10.10.19\nltp_ns_veth2    8      224.10.10.20\nltp_ns_veth2    8      224.10.10.21\nltp_ns_veth2    8      224.10.10.22\nltp_ns_veth2    8      224.10.10.23\nltp_ns_veth2    8      224.10.10.24\nltp_ns_veth2    8      224.10.10.25\nltp_ns_veth2    8      224.10.10.26\nltp_ns_veth2    8      224.10.10.27\nltp_ns_veth2    8      224.10.10.28\nltp_ns_veth2    8      224.10.10.29\nltp_ns_veth2    8      224.10.10.30\nmc_member 1 TINFO: Waiting 60 seconds! Do not interrupt!\nmc_member 1 TINFO: Running member on too many groups over  10.0.0.2\nmc_member 1 TINFO: Running mc_member_e on 3.3.3.3\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nmc_member 1 TINFO: Running (1st) member on 10.0.0.2\nmc_member 1 TINFO: Running (2nd) member on 10.0.0.2\nltp_ns_veth2    8      224.10.10.11\nltp_ns_veth2    8      224.10.10.12\nltp_ns_veth2    8      224.10.10.13\nltp_ns_veth2    8      224.10.10.14\nltp_ns_veth2    8      224.10.10.15\nltp_ns_veth2    8      224.10.10.16\nltp_ns_veth2    8      224.10.10.17\nltp_ns_veth2    8      224.10.10.18\nltp_ns_veth2    8      224.10.10.19\nltp_ns_veth2    8      224.10.10.20\nltp_ns_veth2    8      224.10.10.21\nltp_ns_veth2    8      224.10.10.22\nltp_ns_veth2    8      224.10.10.23\nltp_ns_veth2    8      224.10.10.24\nltp_ns_veth2    8      224.10.10.25\nltp_ns_veth2    8      224.10.10.26\nltp_ns_veth2    8      224.10.10.27\nltp_ns_veth2    8      224.10.10.28\nltp_ns_veth2    8      224.10.10.29\nltp_ns_veth2    8      224.10.10.30\nmc_member 1 TINFO: Waiting 60 seconds! Do not interrupt!\nmc_member 1 TINFO: Running member on too many groups over  10.0.0.2\nmc_member 1 TPASS: Test Successful\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 581.7151267528534,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "mc_opts",
+            "status": "pass",
+            "test": {
+                "command": "mc_opts.sh",
+                "arguments": [],
+                "log": "mc_opts 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface\nmc_opts 1 TINFO: add local addr 10.0.0.2/24\nmc_opts 1 TINFO: add local addr fd00:1:1:1::2/64\nmc_opts 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface\nmc_opts 1 TINFO: add remote addr 10.0.0.1/24\nmc_opts 1 TINFO: add remote addr fd00:1:1:1::1/64\nmc_opts 1 TINFO: Network config (local -- remote):\nmc_opts 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1\nmc_opts 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24\nmc_opts 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TINFO: Running mc_verify_opts mc_verify_opts_error on 10.0.0.2\nmc_opts 1 TINFO: Running ping with bad values\nmc_opts 1 TINFO: Running ping on a invalid interface!\nmc_opts 1 TPASS: Test Successful\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.7149040699005127,
+                "failed": 0,
+                "passed": 1,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 815.0462048053741,
+        "passed": 5,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 0,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}

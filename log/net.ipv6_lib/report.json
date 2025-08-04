@@ -1,0 +1,135 @@
+{
+    "results": [
+        {
+            "test_fqn": "in6_01",
+            "status": "pass",
+            "test": {
+                "command": "in6_01",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nin6_01.c:60: TINFO: type of in6.s6_addr[0] is uint8_t\nin6_01.c:64: TPASS: sizeof(in6.s6_addr) == 16\nin6_01.c:88: TPASS: all sockaddr_in6 fields present and correct\nin6_01.c:97: TINFO: IN6ADDR_ANY_INIT present\nin6_01.c:99: TINFO: in6addr_any present and correct\nin6_01.c:105: TINFO: IN6ADDR_LOOPBACK_INIT present\nin6_01.c:107: TINFO: in6addr_loopback present and correct\nin6_01.c:117: TINFO: in6addr_loopback in network byte order\nin6_01.c:123: TPASS: global in6 definitions tests succeed\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"2002::1\") 0\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"::ffff:10.0.0.1\") 1\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"::fffe:10.0.0.1\") 0\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"::7fff:10.0.0.1\") 0\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"0:0:0:0:0:0:ffff:a001\") 0\nin6_01.c:139: TINFO: IN6_IS_ADDR_V4MAPPED(\"0:0:1:0:0:0:ffff:a001\") 0\nin6_01.c:148: TPASS: IN6_IS_ADDR_V4MAPPED tests succeed\nin6_01.c:178: TINFO: \"2002::1\" is AF_INET6\nin6_01.c:178: TINFO: \"10.0.0.1\" is AF_INET\nin6_01.c:178: TINFO: \"::ffff:10.0.0.1\" is AF_INET6\nin6_01.c:178: TINFO: \"::1\" is AF_INET6\nin6_01.c:178: TINFO: \"::\" is AF_INET6\nin6_01.c:185: TPASS: sockaddr_storage tests succeed\n\nSummary:\npassed   5\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.032678842544555664,
+                "failed": 0,
+                "passed": 5,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "in6_02",
+            "status": "pass",
+            "test": {
+                "command": "in6_02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nin6_02.c:48: TINFO: IPv6 if_nametoindex() test\nin6_02.c:73: TINFO: if_nametoindex(lo) 1\nin6_02.c:52: TCONF: LHOST_IFACES not defined or invalid\nin6_02.c:73: TINFO: if_nametoindex(hoser75) 0\nin6_02.c:73: TINFO: if_nametoindex(6) 0\nin6_02.c:77: TPASS: if_nametoindex() test succeeded\nin6_02.c:112: TINFO: IPv6 if_indextoname() test\nin6_02.c:93: TINFO: if_indextoname(0) returns NULL\nin6_02.c:104: TINFO: if_indextoname(1) returns 'lo'\nin6_02.c:104: TINFO: if_indextoname(2) returns 'end0'\nin6_02.c:104: TINFO: if_indextoname(3) returns 'end1'\nin6_02.c:104: TINFO: if_indextoname(4) returns 'wlan0'\nin6_02.c:104: TINFO: if_indextoname(5) returns 'ltp_ns_veth2'\nin6_02.c:93: TINFO: if_indextoname(6) returns NULL\nin6_02.c:93: TINFO: if_indextoname(7) returns NULL\nin6_02.c:93: TINFO: if_indextoname(8) returns NULL\nin6_02.c:93: TINFO: if_indextoname(9) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1804289383) returns NULL\nin6_02.c:93: TINFO: if_indextoname(846930886) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1681692777) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1714636915) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1957747793) returns NULL\nin6_02.c:93: TINFO: if_indextoname(424238335) returns NULL\nin6_02.c:93: TINFO: if_indextoname(719885386) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1649760492) returns NULL\nin6_02.c:93: TINFO: if_indextoname(596516649) returns NULL\nin6_02.c:93: TINFO: if_indextoname(1189641421) returns NULL\nin6_02.c:123: TPASS: if_indextoname() test succeeded\nin6_02.c:162: TINFO: IPv6 if_nameindex() test\nin6_02.c:187: TINFO: if_nameindex() idx 1 name 'lo'\nin6_02.c:187: TINFO: if_nameindex() idx 2 name 'end0'\nin6_02.c:187: TINFO: if_nameindex() idx 3 name 'end1'\nin6_02.c:187: TINFO: if_nameindex() idx 4 name 'wlan0'\nin6_02.c:187: TINFO: if_nameindex() idx 5 name 'ltp_ns_veth2'\nin6_02.c:187: TINFO: if_nameindex() idx 371 name 'gre0'\nin6_02.c:187: TINFO: if_nameindex() idx 372 name 'gretap0'\nin6_02.c:187: TINFO: if_nameindex() idx 373 name 'erspan0'\nin6_02.c:187: TINFO: if_nameindex() idx 376 name 'ip6tnl0'\nin6_02.c:187: TINFO: if_nameindex() idx 377 name 'ip6gre0'\nin6_02.c:187: TINFO: if_nameindex() idx 384 name 'sit0'\nin6_02.c:227: TINFO: if_freenameindex passed 4096 iterations\nin6_02.c:229: TPASS: if_nameindex() test succeeded\n\nSummary:\npassed   3\nfailed   0\nbroken   0\nskipped  1\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.9024834632873535,
+                "failed": 0,
+                "passed": 3,
+                "broken": 0,
+                "skipped": 1,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "getaddrinfo_01",
+            "status": "pass",
+            "test": {
+                "command": "getaddrinfo_01",
+                "arguments": [],
+                "log": "tst_tmpdir.c:316: TINFO: Using /tmp/LTP_getVkGxiF as tmpdir (tmpfs filesystem)\ntst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\ngetaddrinfo_01.c:101: TINFO: test IPv4: basic lookup\ngetaddrinfo_01.c:129: TPASS: basic lookup\ngetaddrinfo_01.c:101: TINFO: test IPv4: canonical name\ngetaddrinfo_01.c:156: TPASS: canonical name: ai_canonname 'getaddrinfo01.ltp'\ngetaddrinfo_01.c:101: TINFO: test IPv4: host+service\ngetaddrinfo_01.c:129: TPASS: host+service\ngetaddrinfo_01.c:101: TINFO: test IPv4: host+service, AI_PASSIVE\ngetaddrinfo_01.c:129: TPASS: host+service, AI_PASSIVE\ngetaddrinfo_01.c:101: TINFO: test IPv4: host+service, AI_NUMERICHOST\ngetaddrinfo_01.c:234: TPASS: AI_NUMERICHOST: expected -2 (EAI_NONAME)\ngetaddrinfo_01.c:101: TINFO: test IPv4: 0+service, AI_PASSIVE\ngetaddrinfo_01.c:129: TPASS: 0+service, AI_PASSIVE\ngetaddrinfo_01.c:101: TINFO: test IPv4: 0+service\ngetaddrinfo_01.c:129: TPASS: 0+service\ngetaddrinfo_01.c:101: TINFO: test IPv4: host+service, AI_NUMERICSERV\ngetaddrinfo_01.c:249: TPASS: AI_NUMERICSERV: returns -2 (EAI_NONAME)\ngetaddrinfo_01.c:101: TINFO: test IPv4: SOCK_STREAM/IPPROTO_UDP\ngetaddrinfo_01.c:258: TPASS: SOCK_STREAM/IPPROTO_UDP: failed as expected\ngetaddrinfo_01.c:101: TINFO: test IPv4: socktype 0,513\ngetaddrinfo_01.c:129: TPASS: socktype 0,513\ngetaddrinfo_01.c:101: TINFO: test IPv4: AI_V4MAPPED\ngetaddrinfo_01.c:129: TPASS: AI_V4MAPPED\ngetaddrinfo_01.c:101: TINFO: test IPv6: basic lookup\ngetaddrinfo_01.c:129: TPASS: basic lookup\ngetaddrinfo_01.c:101: TINFO: test IPv6: canonical name\ngetaddrinfo_01.c:156: TPASS: canonical name: ai_canonname 'getaddrinfo01.ipv6.ltp'\ngetaddrinfo_01.c:101: TINFO: test IPv6: host+service\ngetaddrinfo_01.c:129: TPASS: host+service\ngetaddrinfo_01.c:101: TINFO: test IPv6: host+service, AI_PASSIVE\ngetaddrinfo_01.c:129: TPASS: host+service, AI_PASSIVE\ngetaddrinfo_01.c:101: TINFO: test IPv6: host+service, AI_NUMERICHOST\ngetaddrinfo_01.c:234: TPASS: AI_NUMERICHOST: expected -2 (EAI_NONAME)\ngetaddrinfo_01.c:101: TINFO: test IPv6: 0+service, AI_PASSIVE\ngetaddrinfo_01.c:129: TPASS: 0+service, AI_PASSIVE\ngetaddrinfo_01.c:101: TINFO: test IPv6: 0+service\ngetaddrinfo_01.c:129: TPASS: 0+service\ngetaddrinfo_01.c:101: TINFO: test IPv6: host+service, AI_NUMERICSERV\ngetaddrinfo_01.c:249: TPASS: AI_NUMERICSERV: returns -2 (EAI_NONAME)\ngetaddrinfo_01.c:101: TINFO: test IPv6: SOCK_STREAM/IPPROTO_UDP\ngetaddrinfo_01.c:258: TPASS: SOCK_STREAM/IPPROTO_UDP: failed as expected\ngetaddrinfo_01.c:101: TINFO: test IPv6: socktype 0,513\ngetaddrinfo_01.c:129: TPASS: socktype 0,513\ngetaddrinfo_01.c:101: TINFO: test IPv6: AI_V4MAPPED\ngetaddrinfo_01.c:129: TPASS: AI_V4MAPPED\n\nSummary:\npassed   22\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.053771257400512695,
+                "failed": 0,
+                "passed": 22,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "asapi_01",
+            "status": "pass",
+            "test": {
+                "command": "asapi_01",
+                "arguments": [],
+                "log": "asapi_01    1  TPASS  :  IN6_ARE_ADDR_EQUAL\nasapi_01    2  TPASS  :  \"hopopt\" protocols entry\nasapi_01    3  TPASS  :  \"ipv6\" protocols entry\nasapi_01    4  TPASS  :  \"ipv6-route\" protocols entry\nasapi_01    5  TPASS  :  \"ipv6-frag\" protocols entry\nasapi_01    6  TPASS  :  \"esp\" protocols entry\nasapi_01    7  TPASS  :  \"ah\" protocols entry\nasapi_01    8  TPASS  :  \"ipv6-icmp\" protocols entry\nasapi_01    9  TPASS  :  \"ipv6-nonxt\" protocols entry\nasapi_01   10  TPASS  :  \"ipv6-opts\" protocols entry\nasapi_01   11  TPASS  :  IPV6_CHECKSUM offset 16 len 21\nasapi_01   12  TPASS  :  IPV6_CHECKSUM offset 22 len 46\nasapi_01   13  TPASS  :  IPV6_CHECKSUM offset 19 len 36\nasapi_01   14  TPASS  :  IPV6_CHECKSUM offset 20 len 21\nasapi_01   15  TPASS  :  IPV6_CHECKSUM offset 66 len 21\nasapi_01   16  TPASS  :  IPV6_CHECKSUM offset 38 len 46\nasapi_01   17  TPASS  :  IPV6_CHECKSUM offset 2016 len 2020\nasapi_01    1  TPASS  :  IN6_ARE_ADDR_EQUAL\nasapi_01    2  TPASS  :  \"hopopt\" protocols entry\nasapi_01    3  TPASS  :  \"ipv6\" protocols entry\nasapi_01    4  TPASS  :  \"ipv6-route\" protocols entry\nasapi_01    5  TPASS  :  \"ipv6-frag\" protocols entry\nasapi_01    6  TPASS  :  \"esp\" protocols entry\nasapi_01    7  TPASS  :  \"ah\" protocols entry\nasapi_01    8  TPASS  :  \"ipv6-icmp\" protocols entry\nasapi_01    9  TPASS  :  \"ipv6-nonxt\" protocols entry\nasapi_01   10  TPASS  :  \"ipv6-opts\" protocols entry\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.015379667282104492,
+                "failed": 0,
+                "passed": 27,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "asapi_02",
+            "status": "pass",
+            "test": {
+                "command": "asapi_02",
+                "arguments": [],
+                "log": "tst_test.c:1953: TINFO: LTP version: 20250530\ntst_test.c:1956: TINFO: Tested kernel: 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025 riscv64\ntst_kconfig.c:88: TINFO: Parsing kernel config '/proc/config.gz'\ntst_test.c:1774: TINFO: Overall timeout per run is 0h 05m 24s\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_SETPASS, send type: 20, filter type: 20\nasapi_02.c:209: TPASS: Expect: pass packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_SETPASS, send type: 20, filter type: 21\nasapi_02.c:209: TPASS: Expect: block packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_SETBLOCK, send type: 20, filter type: 20\nasapi_02.c:209: TPASS: Expect: block packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_SETBLOCK, send type: 20, filter type: 21\nasapi_02.c:209: TPASS: Expect: pass packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_PASSALL, send type: 20, filter type: 20\nasapi_02.c:209: TPASS: Expect: pass packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_PASSALL, send type: 21, filter type: 0\nasapi_02.c:209: TPASS: Expect: pass packet type 21\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_BLOCKALL, send type: 20, filter type: 0\nasapi_02.c:209: TPASS: Expect: block packet type 20\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_BLOCKALL, send type: 21, filter type: 0\nasapi_02.c:209: TPASS: Expect: block packet type 21\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_WILLBLOCK, send type: 20, filter type: 21\nasapi_02.c:189: TPASS: Expect: 0 (0)\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_WILLBLOCK, send type: 20, filter type: 20\nasapi_02.c:189: TPASS: Expect: 1 (1)\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_WILLPASS, send type: 20, filter type: 21\nasapi_02.c:195: TPASS: Expect: 0 (0)\nasapi_02.c:168: TINFO: Testing ICMP6_FILTER_WILLPASS, send type: 22, filter type: 22\nasapi_02.c:195: TPASS: Expect: 1 (1)\n\nSummary:\npassed   12\nfailed   0\nbroken   0\nskipped  0\nwarnings 0\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 1.0310704708099365,
+                "failed": 0,
+                "passed": 12,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        },
+        {
+            "test_fqn": "asapi_03",
+            "status": "pass",
+            "test": {
+                "command": "asapi_03",
+                "arguments": [],
+                "log": "asapi_03    1  TPASS  :  IPV6_RECVPKTINFO set-get\nasapi_03    2  TPASS  :  IPV6_RECVPKTINFO receive\nasapi_03    3  TPASS  :  IPV6_RECVHOPLIMIT set-get\nasapi_03    4  TPASS  :  IPV6_RECVHOPLIMIT receive\nasapi_03    5  TPASS  :  IPV6_RECVRTHDR set-get\nasapi_03    6  TPASS  :  IPV6_RECVHOPOPTS set-get\nasapi_03    7  TPASS  :  IPV6_RECVDSTOPTS set-get\nasapi_03    8  TPASS  :  IPV6_RECVTCLASS set-get\nasapi_03    9  TPASS  :  IPV6_RECVTCLASS receive\nasapi_03   10  TPASS  :  IPV6_RECVTCLASS (2) set-get\nasapi_03   11  TPASS  :  IPV6_RECVTCLASS (2) receive\nasapi_03   12  TPASS  :  IPV6_2292PKTINFO set-get\nasapi_03   13  TPASS  :  IPV6_2292PKTINFO receive\nasapi_03   14  TPASS  :  IPV6_2292HOPLIMIT set-get\nasapi_03   15  TPASS  :  IPV6_2292HOPLIMIT receive\nasapi_03   16  TPASS  :  IPV6_2292RTHDR set-get\nasapi_03   17  TPASS  :  IPV6_2292HOPOPTS set-get\nasapi_03   18  TPASS  :  IPV6_2292DSTOPTS set-get\n",
+                "retval": [
+                    "0"
+                ],
+                "duration": 0.01846766471862793,
+                "failed": 0,
+                "passed": 18,
+                "broken": 0,
+                "skipped": 0,
+                "warnings": 0,
+                "result": "pass"
+            }
+        }
+    ],
+    "stats": {
+        "runtime": 2.053851366043091,
+        "passed": 87,
+        "failed": 0,
+        "broken": 0,
+        "skipped": 1,
+        "warnings": 0
+    },
+    "environment": {
+        "distribution": "debian",
+        "distribution_version": "",
+        "kernel": "Linux 6.6.100-th1520 #2025.07.28.07.38+476f348b8 SMP Mon Jul 28 07:58:32 UTC 2025",
+        "arch": "riscv64",
+        "cpu": "unknown",
+        "swap": "4194300 kB",
+        "RAM": "16194360 kB"
+    }
+}
