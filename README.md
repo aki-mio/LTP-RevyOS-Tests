@@ -1,30 +1,196 @@
 # LTP-RevyOS-Tests
+
 LTP testing on the RevyOS platform, evaluating system stability, compatibility, and performance to ensure reliable operation.
 
-测试使用系统：
+---
 
-测试使用开发版：
+## 测试环境
 
-测试时间：
+#### 系统信息
 
-测试内容：
+* 系统版本：RevyOS 20250729
 
+* 参考安装文档：参考安装文档： [RevyOS安装文档](https://revyos.github.io/docs/)
+
+#### 硬件信息
+
+* Lichee Pi 4A (16GB RAM + 128GB eMMC)
+
+#### 本次测试相关信息
+
+* 测试时间：2025/08/07
+
+* 测试内容：在 RevyOS 平台上进行 LTP 测试，评估系统稳定性、兼容性和性能，确保系统的可靠运行。主要是用Lichee Pi 4A（荔枝派 4A）进行测试。
+
+* 参考文档：[Linux Test Project 1.0 documentation](https://linux-test-project.readthedocs.io/en/latest/users/quick_start.html)
 
 ---
+
 ## 在RevyOS上运行LTP测试
 
-1. 确保你的设备上刷写了最新的RevyOS系统，我们开始测试
-2. 拿取release
-3. 解压缩
-4. 执行命令...
-5. 创建目录...
-6. 执行命令...
+1. 确保你的设备上刷写了最新的RevyOS系统，我们开始测试。
 
+2. 拿取release
+   
+   进入你创建好的相关目录，使用wget或者其他方式获得LTP的最新release。
+   
+   ```bash
+   wget https://github.com/linux-test-project/ltp/releases/download/20250530/ltp-full-20250530.tar.bz2
+   ```
+
+3. 解压缩
+   
+   成功获取到压缩包之后，我们将其解压。
+   
+   ```bash
+   tar -xjf ltp-full-20250530.tar.bz2
+   ```
+   
+   其中：
+   
+   * -xjf
+     
+     -x : 解压
+     
+     -j : 解压.bz2格式
+     
+     -f : 指定文件名
+
+4. 构建项目
+   
+   * 进入创建好的目录。
+   
+   * 执行命令：
+     
+     ```bash
+     ./configure
+     ```
+     
+     这个命令讲帮你自动构建Makefile。
+     
+     我们可以将项目完整的构建，执行：
+     
+     ```bash
+     make -j4
+     ```
+     
+     其中4是荔枝派的核心数，测试者可根据自己设备来进行调整。
+     
+     ```bash
+     make install
+     ```
+     
+     这条命令将会将构建好的项目转移到系统目录之中。
+     
+     然后跳转到系统目录中开始测试。
+     
+     ```bash
+     cd /opt/ltp
+     ```
+
+5. 我们可以挑选测试集进行测试，测试目录见``` /opt/ltp/runtest ```
+   
+   我们这里以scycalls测试集为例。
+
+6. 创建目录 /opt/ltp_results/syscalls
+   
+   ```bash
+   sudo mkdir /opt/ltp_results/syscalls
+   ```
+
+7. 运行syscalls测试
+   
+   在```/opt/ltp```目录下执行
+   
+   ```bash
+   sudo ./kirk -f syscalls-ipc \
+    -o /opt/ltp_results/syscalls-ipc/report.json \
+    -T 10800 \
+    -v
+   ```
+   
+   执行测试并生成日志。
 * 相关命令的解释：
+  
+   ```sudo``` 在这个测试中，有些测试需要管理员权限才能运行
+  
+   ```-f``` 执行指定测试集 
+  
+   ```-T 10800``` 限制时间设置为三个小时。默认时间是一个小时，一个小时跑不完时就会强制关闭，但是实际上你的测试没有卡死。
+  
+   ```-v``` 使测试输出更加详细的日志。
+  
+   ```-o``` 输出json日志到指定目录。
+  
+  测试脚本```kirk```的相关```help```：
+  
+  ```bash
+  ./kirk --help
+  usage: kirk [-h] [--version] [--verbose] [--no-colors] [--tmp-dir TMP_DIR] [--restore RESTORE]
+              [--json-report JSON_REPORT] [--monitor MONITOR] [--sut SUT] [--framework FRAMEWORK]
+              [--env ENV] [--skip-tests SKIP_TESTS] [--skip-file SKIP_FILE]
+              [--run-suite [RUN_SUITE ...]] [--run-pattern RUN_PATTERN] [--run-command RUN_COMMAND]
+              [--suite-timeout SUITE_TIMEOUT] [--exec-timeout EXEC_TIMEOUT] [--randomize]
+              [--runtime RUNTIME] [--suite-iterate SUITE_ITERATE] [--workers WORKERS]
+              [--force-parallel]
+  
+  Kirk - All-in-one Linux Testing Framework
+  
+  options:
+    -h, --help            show this help message and exit
+  
+  General options:
+    --version, -V         show program‘s version number and exit
+    --verbose, -v         Verbose mode
+    --no-colors, -n       If defined, no colors are shown
+    --tmp-dir TMP_DIR, -d TMP_DIR
+                          Temporary directory
+    --restore RESTORE, -r RESTORE
+                          Restore a specific session
+    --json-report JSON_REPORT, -o JSON_REPORT
+                          JSON output report
+    --monitor MONITOR, -m MONITOR
+                          Location of the monitor file
+  
+  Configuration options:
+    --sut SUT, -u SUT     System Under Test parameters. For help please use '--sut help'
+    --framework FRAMEWORK, -U FRAMEWORK
+                          Framework parameters. For help please use '--framework help'
+    --env ENV, -e ENV     List of key=value environment values separated by ':'
+    --skip-tests SKIP_TESTS, -s SKIP_TESTS
+                          Skip specific tests
+    --skip-file SKIP_FILE, -S SKIP_FILE
+                          Skip specific tests using a skip file (newline separated item)
+  
+  Execution options:
+    --run-suite [RUN_SUITE ...], -f [RUN_SUITE ...]
+                          List of suites to run
+    --run-pattern RUN_PATTERN, -p RUN_PATTERN
+                          Run all tests matching the regex pattern
+    --run-command RUN_COMMAND, -c RUN_COMMAND
+                          Command to run
+    --suite-timeout SUITE_TIMEOUT, -T SUITE_TIMEOUT
+                          Timeout before stopping the suite (default: 1h)
+    --exec-timeout EXEC_TIMEOUT, -t EXEC_TIMEOUT
+                          Timeout before stopping a single execution (default: 1h)
+    --randomize, -R       Force parallelization execution of all tests
+    --runtime RUNTIME, -I RUNTIME
+                          Set for how long we want to run the session in seconds
+    --suite-iterate SUITE_ITERATE, -i SUITE_ITERATE
+                          Number of times to repeat testing suites
+    --workers WORKERS, -w WORKERS
+                          Number of workers to execute tests in parallel
+    --force-parallel, -F  Force parallelization execution of all tests
+  ```
 
 * 需要注意的事项：
+  
+  * 荔枝派一小时经常跑不完测试集，建议增加最大时间
+  
+  * 建议建立规范的文件结构存放不同测试集的日志
 
 ---
+
 ## 测试中出现的broken和fail
 
 * 使用runltp出现的syscalls错误：
@@ -32,7 +198,6 @@ LTP testing on the RevyOS platform, evaluating system stability, compatibility, 
 * 测试网络时候出现的broken：
 
 --- 
-
 
 ## 相关测试表单
 
@@ -153,47 +318,52 @@ uevent
 watchqueue
 ```
 
-
 ---
 
 ## 测试集文件结构
-```
+
+```bash
+tree
 .
-├── list.md
 ├── log
-│   ├── cpuhotplug
-│   │   └── report.json
-│   ├── fcntl-locktests
-│   │   └── report_not_skip.json
-│   ├── fs
-│   │   └── report.json
-│   ├── fs_bind
-│   │   └── report.json
-│   ├── fs_perms_simple
-│   ├── fs_readonly
-│   │   └── report.json
-│   ├── hugetlb
-│   │   └── report.json
-│   ├── mm
-│   │   └── report.json
-│   ├── net.features
-│   │   └── report.json
-│   ├── net.ipv6
-│   │   └── report.json
-│   ├── net.ipv6_lib
-│   │   └── report.json
-│   ├── net.multicast
-│   │   └── report.json
-│   ├── net.nfs
-│   │   └── report.json
-│   ├── net.rpc_tests
-│   │   └── report.json
-│   ├── syscalls
-│   │   ├── failed.txt
-│   │   ├── report_not_skip.json
-│   │   └── report_with_skip.json
-│   ├── syscalls-ipc
-│   │   └── report.json
+│   ├── file_tests
+│   │   ├── fcntl-locktests
+│   │   │   └── report_not_skip.json
+│   │   ├── fs
+│   │   │   └── report.json
+│   │   ├── fs_bind
+│   │   │   └── report.json
+│   │   ├── fs_perms_simple
+│   │   └── fs_readonly
+│   │       └── report.json
+│   ├── list.md
+│   ├── net_work_tests
+│   │   ├── net.features
+│   │   │   └── report.json
+│   │   ├── net.ipv6
+│   │   │   └── report.json
+│   │   ├── net.ipv6_lib
+│   │   │   └── report.json
+│   │   ├── net.multicast
+│   │   │   └── report.json
+│   │   ├── net.nfs
+│   │   │   └── report.json
+│   │   └── net.rpc_tests
+│   │       └── report.json
+│   ├── system_call_tests
+│   │   ├── syscalls
+│   │   │   ├── failed.txt
+│   │   │   ├── report_not_skip.json
+│   │   │   └── report_with_skip.json
+│   │   └── syscalls-ipc
+│   │       └── report.json
+│   ├── system_core_tests
+│   │   ├── cpuhotplug
+│   │   │   └── report.json
+│   │   ├── hugetlb
+│   │   │   └── report.json
+│   │   └── mm
+│   │       └── report.json
 │   └── template.md
 └── README.md
 ```

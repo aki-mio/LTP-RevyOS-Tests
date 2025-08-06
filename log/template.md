@@ -1,6 +1,4 @@
-﻿
-
----
+﻿---
 
 sudo mkdir /opt/ltp_results/syscalls-ipc
 
