@@ -193,9 +193,52 @@ LTP testing on the RevyOS platform, evaluating system stability, compatibility, 
 
 ## 测试中出现的broken和fail
 
-* 使用runltp出现的syscalls错误：
-* 使用kirk出现的syscalls错误：
-* 测试网络时候出现的broken：
+目前运行完的测试中：
+
+* 使用kirk出现的错误：
+  
+  * LTP-RevyOS-Tests/log/file_tests/fs_readonly/report.json中报告了**35个**failed
+    
+    * 应该是脚本问题，不合适或者没有提前预处理。
+  
+  * LTP-RevyOS-Tests/log/net_work_tests/net.features/report.json中报告了**2个**failed
+    
+    * 第一个问题报告了```TFAIL: performance result is -214% < threshold -200%``` 这说明STCP测试效果低于预期-200%，认为不属于系统问题。
+      
+      
+    * 第二个问题报告`TFAIL: performance result is -239% < threshold -200%`  这说明在IPv6 环境中，STCP测试效果低于预期-200%，认为也不属于系统问题。
+      
+      --- 
+  
+  * LTP-RevyOS-Tests/log/system_call_tests/syscalls/report_with_skip.json中报告了**2个**failed
+    
+    * 第一个问题报告了```clock_nanosleep() slept for too long``` 这说明```clock_nanosleep()``` 睡眠时间过长。猜测是测试环境下计时器精度下降或者测试效果受限于开发板性能。
+      
+      
+    
+    * 第二个问题报告了`TFAIL: umount(MNTPOINT) failed: EBUSY (16)` 根据错误编码，分析错误原因是设备或文件系统正在被使用，无法卸载。但是具体测试细节尚未进行研究。
+      
+      ---
+  
+  * LTP-RevyOS-Tests/log/system_core_tests/hugetlb/report.json中报告了**2个**failed
+    
+    - 第一个问题报告了```hugemmap15.c:195: TFAIL: icache unclean``` 并且提示了
+      
+      ```bash
+      HINT: You _MAY_ be missing kernel fixes:
+      
+      https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cbf52afdc0eb
+      ```
+      
+      报告指出CPU指令缓存没被正确刷新，很可能是与**RISC-V 架构相关的问题** 。
+      
+      考虑到报告给出补丁地址，认为修复方向比较明确。
+      
+      
+    
+    - 第二个问题报告了```TFAIL: couldn't find 2 free neighbour slices: ENOMEM (12)``` 系统报告内存不足，报告表明是hugepage内存分配问题。**可能是系统缺陷** 。
+      
+      
 
 --- 
 
