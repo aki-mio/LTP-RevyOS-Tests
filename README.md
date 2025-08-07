@@ -195,7 +195,7 @@ LTP testing on the RevyOS platform, evaluating system stability, compatibility, 
 
 目前运行完的测试中：
 
-* 使用kirk出现的错误：
+* **使用kirk出现的错误**：
   
   * LTP-RevyOS-Tests/log/file_tests/fs_readonly/report.json中报告了**35个**failed
     
@@ -212,12 +212,14 @@ LTP testing on the RevyOS platform, evaluating system stability, compatibility, 
   
   * LTP-RevyOS-Tests/log/system_call_tests/syscalls/report_with_skip.json中报告了**2个**failed
     
-    * 第一个问题报告了```clock_nanosleep() slept for too long``` 这说明```clock_nanosleep()``` 睡眠时间过长。猜测是测试环境下计时器精度下降或者测试效果受限于开发板性能。
+    * 第一个问题报告了```clock_nanosleep() slept for too long``` 这说明```clock_nanosleep()``` 睡眠时间过长。猜测是测试环境下定时器精度下降或者测试效果受限于开发板性能。
       
       
     
     * 第二个问题报告了`TFAIL: umount(MNTPOINT) failed: EBUSY (16)` 根据错误编码，分析错误原因是设备或文件系统正在被使用，无法卸载。但是具体测试细节尚未进行研究。
-      
+   
+    > **值得一提的是，这是第一次使用kirk测试syscalls测试集，其中跳过了runltp测试中失败的测试点。报告了这两个错误，但是再次使用kirk完整测试syscalls测试集并没有再次出现任何测试点的失败**
+    
       ---
   
   * LTP-RevyOS-Tests/log/system_core_tests/hugetlb/report.json中报告了**2个**failed
@@ -238,6 +240,22 @@ LTP testing on the RevyOS platform, evaluating system stability, compatibility, 
     
     - 第二个问题报告了```TFAIL: couldn't find 2 free neighbour slices: ENOMEM (12)``` 系统报告内存不足，报告表明是hugepage内存分配问题。**可能是系统缺陷** 。
       
+      
+* **使用kirk出现的broken**：
+  
+  * LTP-RevyOS-Tests/log/net_work_tests/net.ipv6/report.json
+
+    * broken1：报告了```dnsmasq_tests 1 TBROK: dhclient failed``` 即 dhclient 启动失败，怀疑是兼容问题而并非系统问题。
+    
+  * LTP-RevyOS-Tests/log/system_call_tests/syscalls/report_not_skip.json
+    
+    * broken1：报告了```leapsec01.c:84: TBROK: adjtimex status 8208 not set``` 即调用 adjtimex() 后返回的状态值没有包含期望的“闰秒”标志。崩溃原因有待分析，可能仍与定时器相关。
+      
+    * broken2：测试未完成，超时被中止。
+    
+  * LTP-RevyOS-Tests/log/system_core_tests/hugetlb/report.json
+    
+    * broken1：报告显示```tst_taint.c:95: TBROK: Kernel is already tainted``` 也就是显示内核被污染，故测试不再继续进行。可能是与其他测试有关也可能存在别的原因。
       
 
 --- 
